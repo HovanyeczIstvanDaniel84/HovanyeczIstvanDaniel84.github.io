@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-cont {
+    width: 100%;
+    padding: 0px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-item, nav button {
+    font-weight: 500 !important;
+}
+
+nav {
+    background-color: #f1f0f080;
+}
+.icon {
+    width: 20px !important;
+}
+
+.landing-page i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px !important;
+}
+
+
+
+.interface li {
+    margin: 0px 20px;
+}
+.button-group button {
+    margin: 0px 5px;
+}
+
+nav ul button {
+    width: 100%;
+    margin: 5px 0px !important;
+}
+
+nav form input {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav form button {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    background-color: #cccccc80 !important;
+    margin: auto 0px !important;
+    border: 1px solid #ccc;
+    margin: 0px !important;
+}
+
+nav form button:hover {
+    background-color: #ccc !important;
+}
+
+.cover {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.options li {
+    margin: 10px;
+}
+.options a {
+    font-weight: 500;
+    border-width: 2px;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 6px 6px #0000007a;
+    margin-top: 100px;
+}
+
+.landing-page .flex-column {
+    position: relative;
+    background-color: #00000077;
+    bottom: 750px;
+    width: 100%;
+    height: 750px;   
+}
+
+.landing-page p {
+    text-shadow: 2px 2px #0000007a;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar>.container-fluid {
+        justify-content: start;
+    }
+    .interface {
+        margin-left: auto;
+    }
+    .navbar-nav li.d-none {
+        display: block !important;
+    }
+    .navbar-nav {
+        margin: 20px 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .interface li:last-child {
+        display: block !important;
+    }
+    nav .button-group {
+        display: none !important;
+    }
+}
+

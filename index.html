@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean gépszerelés&reg;</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid main-cont">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="offcanvas-title" id="offcanvasNavbarLabel" href="index.html">
+                                <img src="images/logo.png" alt="" class="logo">
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="d-flex" role="search">
+                                <input class="form-control" type="search" placeholder="Keresés" aria-label="Keresés">
+                                <button class="btn" type="button"><img src="images/search.png" alt=""
+                                        class="icon"></button>
+                            </form>
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3my-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Webshop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rólunk</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kontakt</a>
+                                </li>
+                                <li class="nav-item me-2 button-group d-none">
+                                    <button class="btn btn-outline-dark" type="button">Bejelentkezés</button>
+                                    <button class="btn btn-dark" type="button">Regisztráció</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="interface d-flex my-auto justify-content-end">
+                        <li>
+                            <a href="#"><img src="images/shopping-cart.png" alt="Kosár" title="Kosár" class="icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/heart.png" alt="Kívánságlista" title="Kívánságlista"
+                                    class="icon"></a>
+                        </li>
+                        <li class="d-none">
+                            <a href="#"><img src="images/user.png" alt="Fiókom" title="Fiókom" class="icon"></a>
+                        </li>
+                    </ul>
+                    <div class="button-group d-flex">
+                        <button class="btn btn-outline-dark" type="button">Bejelentkezés</button>
+                        <button class="btn btn-dark" type="button">Regisztráció</button>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="landing-page">
+                <img src="images/cover_image.png" alt="" class="cover">
+                <div class="d-flex flex-column align-items-center text-white flex-wrap">
+                    <h1 class="mb-3 text-center">Építsd meg a következő számítógéped!</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae totam maiores nihil ducimus aque.</p>
+                    <div class="options d-flex justify-content-center">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#" type="button" class="btn btn-outline-light"><i class="bi bi-briefcase"></i> Irodai</a></li>
+                            <li><a href="#" type="button" class="btn btn-outline-light"><i class="bi bi-gear"></i> Munkaállomás</a></li>
+                            <li><a href="#" type="button" class="btn btn-outline-light"><i class="bi bi-database"></i> Kiszolgáló</a></li>
+                            <li><a href="#" type="button" class="btn btn-outline-light"><i class="bi bi-controller"></i> Játék</a></li>
+                            
+                        </ul>
+                
+                    </div>
+                    <button class="btn btn-dark" type="button">Rólunk</button>
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
