@@ -180,8 +180,18 @@ h1 {
     width: 60%;
     background-color: #f8f8f8;
     padding: 60px;
-    box-shadow: 10px 10px 5px #2b2b2b81
+    box-shadow: 10px 10px 5px #2b2b2b81;
+    height: 400px;
 }
+
+.carousel-inner {
+    height: 100% !important;
+}
+
+.carousel-item button {
+    display: block;
+}
+
 .carousel-item h3 {
     font-size: 40px;
 }
@@ -227,7 +237,7 @@ h1 {
     padding: 30px;
     margin: 0 auto;
 }
-#slideshow, .carousel-item, .carousel-inner, .carousel-item article, .text-cont, .img-cont {
+#slideshow, .carousel-item, .carousel-inner, .carousel-item article, .carousel-item .text-cont, .img-cont {
     position: relative;
     z-index: 2 !important;
 }
@@ -270,6 +280,7 @@ footer, ul{
 }
 .footer-widget h6, .footer-widget .footer-newsletter form input{
     color: #fff;
+    outline: none;
 }
 .footer-widget ul li{
     line-height: 36px;
@@ -317,6 +328,73 @@ footer .social-icon {
 footer .logo {
     width: 200px;
 }
+
+.article-cont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blogs .article-cont {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.blogs .text-cont {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.blogs .img-cont {
+    object-fit: contain;
+    object-position: center;
+    height: 250px;
+    
+}
+
+.blogs article h3 {
+    height: 50px;
+    
+    font-size: 22px;
+}
+
+.blogs .article-head ul {
+    list-style-type: disc;
+}
+
+.blogs .article-head li:first-child {
+    list-style-type: none;
+}
+
+.blogs .article-head li {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.blogs .article-head li i {
+    margin-right: 5px;
+}
+
+.blogs i {
+    color: #2b2b2b;
+    font-size: 25px;
+}
+
+.blogs img {
+    margin-right: 0px;
+    height: 100%;
+}
+
+.blogs .img-cont, .blogs img {
+    width: 100% !important;
+}
+
+.blogs article {
+    width: 23%;
+    border: 1px solid #ccc;
+}
+
 @media only screen and (max-width: 991px) {
     .navbar>.container-fluid {
         justify-content: start;
@@ -338,11 +416,11 @@ footer .logo {
         bottom: 675px;
     }
 }
-@media only screen and (max-width: 569px) {
+/* @media only screen and (max-width: 569px) {
     .carousel-item .height{
         height: 300px;
     }
-}
+} */
 @media only screen and (max-width: 1200px) {
     .interface li:last-child {
         display: block !important;
@@ -398,11 +476,60 @@ footer .logo {
     .navbar-toggler {
         margin-left: auto;
     }
+    .blogs li {
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width: 1100px) {
     .services article {
         width: 80% !important;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    #slideshow p {
+        font-size: 16px;
+    }
+    #slideshow h3 {
+        font-size: 30px;
+    }
+    #slideshow button.btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    #slideshow {
+        padding: 30px;
+    }
+    .blogs .article-cont {
+        width: 100% !important;
+    }
+    .form-cont {
+        width: 100% !important;
+    }
+    .services button {
+        margin: 0px auto !important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #slideshow p {
+        font-size: 14px;
+    }
+    #slideshow h3 {
+        font-size: 25px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    #slideshow p {
+        font-size: 14px;
+    }
+    #slideshow h3 {
+        font-size: 20px;
+    }
+    
 }
 
 @media only screen and (max-width: 1600px) {
@@ -414,5 +541,23 @@ footer .logo {
     }
     .advantages .box{
         margin-bottom: 30px;
+    }
+    .blogs .article-cont {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .blogs article {
+        width: 35%;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .blogs article {
+        width: 100% !important;
+        margin: 20px 0px !important;
+    }
+    .blogs .article-cont {
+        width: 70%;
     }
 }
