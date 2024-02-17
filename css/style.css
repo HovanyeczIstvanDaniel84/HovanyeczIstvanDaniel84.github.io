@@ -80,7 +80,26 @@ h2 {
 h3 {
     font-weight: 600;
 }
-
+.about-container{
+    width: 1000px;
+    background-color: #fff;
+    padding: 0px 20px 0px 20px;
+}
+.about-icon{
+    height: 451px;
+    width: auto;
+}
+.about h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+.about p{
+    font-size: 20px;
+}
+.about .col-lg-6:nth-child(2){
+    text-align: center;
+}
 .landing-page {
     height: 750px;
 }
@@ -236,12 +255,17 @@ h1 {
     bottom: 625px;
     padding: 30px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 #slideshow, .carousel-item, .carousel-inner, .carousel-item article, .carousel-item .text-cont, .img-cont {
     position: relative;
     z-index: 2 !important;
 }
-
+.advantages-icon{
+    height: 120px;
+    width: 100px;
+    padding-bottom: 20px;
+}
 .advantages p, .advantages h3{
     text-align: center;
 }
@@ -559,5 +583,39 @@ footer .logo {
     }
     .blogs .article-cont {
         width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1300px) {
+    .about-container{
+        width: 800px;
+    }
+    .about-icon{
+        height: 430px;
+    }
+    .about h2{
+        font-size: 45px;
+    }
+    .about p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 991px) {
+    .about-container{
+        width: 800px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .about-container{
+        width: 600px;
+    }
+}
+@media only screen and (min-width: 430px) and (max-width: 599px) {
+    .about-icon{
+        height: 300px;
+    }
+    .about-container{
+        width: 430px;
     }
 }
