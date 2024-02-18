@@ -291,8 +291,10 @@
             <section class="promote d-flex align-items-center flex-column p-5 text-white">
                 <h2 class="mb-5 text-center">Válasszon több mint 300 előre épített számítógép közül</h2>
                 <div class="text-cont">
-                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, placeat nihil natus sunt in
-                        dolor doloremque, culpa laborum soluta iure veritatis neque necessitatibus hic amet odio numquam.
+                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, placeat
+                        nihil natus sunt in
+                        dolor doloremque, culpa laborum soluta iure veritatis neque necessitatibus hic amet odio
+                        numquam.
                         Totam, incidunt beatae.
                     </p>
                 </div>
@@ -427,35 +429,79 @@
             <section class="reach-out">
                 <img src="images/cover_image2.png" alt="" class="cover">
                 <div class="form-cont">
-                    <form class="row g-3">
+                    <form class="row g-3 needs-validation" novalidate>
                         <p>Kérdése van? Üzenjen nekünk! Két munkanapon belül felvesszük Önnel a kapcsolatot.</p>
                         <div class="col-sm-6">
                             <label for="inputName4" class="form-label">Név</label>
-                            <input type="text" class="form-control" id="inputName4">
+                            <input type="text" class="form-control" id="inputName4" required>
+                            <div class="invalid-feedback">
+                                Ezen mező kitöltése kötelező.
+                            </div>
                         </div>
                         <div class="col-sm-6">
                             <label for="phonNum" class="form-label">Telefonszám</label>
-                            <input type="tel" class="form-control" id="phonNum">
+                            <input type="tel" class="form-control" id="phonNum" required>
+                            <div class="invalid-feedback">
+                                Ezen mező kitöltése kötelező.
+                            </div>
                         </div>
                         <div class="col-sm-6">
                             <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <input type="email" class="form-control" id="inputEmail4" required>
+                            <div class="invalid-feedback">
+                                Kérjük, valós címet adjon meg!
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="county-select" class="form-label">Vármegye</label>
+                            <select class="form-select form-control" aria-label="County" id="county-select" required>
+                                <option selected disabled value="">Válasszon vármegyét</option>
+                                <option value="1">Győr-Moson-Sopron</option>
+                                <option value="2">Vas</option>
+                                <option value="3">Zala</option>
+                                <option value="4">Somogy</option>
+                                <option value="5">Baranya</option>
+                                <option value="6">Veszprém</option>
+                                <option value="7">Komárom-Esztergom</option>
+                                <option value="8">Fejér</option>
+                                <option value="9">Tolna</option>
+                                <option value="10">Pest</option>
+                                <option value="11">Bács-Kiskun</option>
+                                <option value="12">Nógrád</option>
+                                <option value="13">Heves</option>
+                                <option value="14">Jász-Nagykun-Szolnok</option>
+                                <option value="15">Csongrád-Csanád</option>
+                                <option value="16">Borsod-Abaúj-Zemplén</option>
+                                <option value="17">Szabolcs-Szatmár-Bereg</option>
+                                <option value="18">Hajdú-Bihar</option>
+                                <option value="19">Békés</option>
+                                <option value="20">Külföld</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Kérjük, válassza ki megyét, ahol tartózkodik.
+                            </div>
                         </div>
                         <div class="col-sm-12">
                             <label for="messageInput" class="form-label">Üzenet</label>
-                            <textarea name="message" id="messageInput" class="d-block w-100" rows="4"
-                                cols="30"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Elolvastam és megértettem a <a href="#">Szerződési feltételekben</a> foglaltakat
-                                </label>
+                            <textarea name="message" id="messageInput" class="d-block w-100" rows="4" cols="30"
+                                required></textarea>
+                            <div class="invalid-feedback">
+                                Ezen mező kitöltése kötelező!
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="button" class="btn btn-dark ms-auto d-block">Küldés</button>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                <label class="form-check-label" for="gridCheck">
+                                    Elolvastam és megértettem a <a href="#">Szerződési feltételekben</a> foglaltakat
+                                </label>
+                                <div class="invalid-feedback">
+                                    Kérjük, fogadja el a feltételeinket!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-dark ms-auto d-block">Küldés</button>
                         </div>
                     </form>
                 </div>
@@ -527,8 +573,44 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Message űrlap visszajelző modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Köszönjük bizalmát!</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Üzenetét rögzítettük! Hamarosan keresni fogjuk.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezár</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Negatív visszajelző modal, ha a user másodjára próbálja kitölteni az űrlapot -->
+        <div class="modal fade" id="negativeFeedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Sikertelen művelet</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ezt az űrlapot már kitöltötte, legközelebb 24 óra múlva tudja majd ismét kitölteni.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezár</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/form-validation.js"></script>
     <script src="js/script.js"></script>
 </body>
 
