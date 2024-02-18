@@ -642,13 +642,12 @@ footer .logo {
     }
     .form-cont {
         width: 100% !important;
+        position: static;
+        border-top: 1px solid #ccc;
+        border-radius: 0px;
     }
     .services button {
         margin: 0px auto !important;
-    }
-    .form-cont {
-        position: static;
-        border-top: 1px solid #ccc;
     }
     .reach-out .cover {
         display: none;
