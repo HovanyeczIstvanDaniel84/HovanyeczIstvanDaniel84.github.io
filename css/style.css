@@ -25,7 +25,7 @@ nav {
     width: 20px !important;
 }
 
-.landing-page i {
+.options i {
     margin-right: 10px;
     font-size: 20px;
 }
@@ -81,13 +81,17 @@ h3 {
     font-weight: 600;
 }
 .about-container{
-    width: 1000px;
+    /* width: 1000px; */
+    width: 60%;
+    height: 451px;
     background-color: #fff;
     padding: 0px 20px 0px 20px;
 }
 .about-icon{
+    object-fit: contain;
     height: 451px;
-    width: auto;
+    
+    /* width: auto; */
 }
 .about h2{
     padding: 20px;
@@ -96,6 +100,7 @@ h3 {
 }
 .about p{
     font-size: 20px;
+    /* max-height: 451px; */
 }
 .about .col-lg-6:nth-child(2){
     text-align: center;
@@ -105,7 +110,7 @@ h3 {
 }
 
 .services article {
-    width: 35% !important;
+    width: 45% !important;
     padding: 10px;
     margin: 20px;
 }
@@ -247,12 +252,63 @@ h1 {
     resize: none;
 }
 
+.show-more {
+    display: block;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blogs .show-more, .promote .show-more {
+    border-radius: 50px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 210px;
+    height: 75px;
+    font-weight: 500;
+}
+
+.landing-page .show-more {
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+.show-more i {
+    right: 0px;
+    transition: 0.1s;
+    font-size: 0px;
+    position: relative;
+}
+.promote .text-cont {
+    width: 70%;
+}
+
+.promote {
+    background-color: #2b2b2b;
+}
+
+.landing-page .show-more i, .promote .show-more i {
+    color: #2b2b2b;
+}
+
+.blogs .show-more i {
+    color: #fff;
+}
+
+.w-20px {
+    font-size: 25px !important;
+    position: relative !important;
+    margin-left: 10px;
+}
+
 .form-cont {
-    width: 500px;
-    height: 500px;
+    width: 550px;
     background-color: #fff;
     position: relative;
-    bottom: 625px;
+    bottom: 675px;
     padding: 30px;
     margin: 0 auto;
     border-radius: 10px;
@@ -285,14 +341,18 @@ h1 {
     margin-left: auto;
     border-width: 2px;
 }
+
+.form-cont a:hover {
+    color: #00ffd5;
+}
+
 footer, a{
     text-decoration: none;
-    margin-right: 15px;
 }
 footer, ul{
     padding-left: 0;
 }
-.footer{
+footer{
     background: rgb(33,37,41);
     padding-top: 70px;
 }
@@ -337,12 +397,34 @@ footer, ul{
 .footer-copyright-text p, span{
     margin-bottom: 0;
 }
-footer .social-icon {
+/* footer .social-icon {
     width: 25px;
+} */
+
+footer .socials a {
+    margin-right: 15px;
 }
+
+.paying-methods {
+    width: 175px;
+}
+.paying-methods .icon {
+    width: 40px !important;
+}
+
+footer i.bi {
+    color: #b7b7b7;
+    font-size: 25px;
+}
+
+footer i.bi:hover {
+    color: #00ffd5
+    
+}
+
 .blue-button{
     background-color: #00ffd5;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     border-style: none;
 }
@@ -359,7 +441,7 @@ footer .logo {
 }
 
 .blogs .article-cont {
-    width: 100%;
+    width: 90%;
     margin: 0px auto;
 }
 
@@ -369,7 +451,7 @@ footer .logo {
 }
 
 .blogs .img-cont {
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     height: 250px;
     
@@ -400,7 +482,7 @@ footer .logo {
     margin-right: 5px;
 }
 
-.blogs i {
+.blogs article i {
     color: #2b2b2b;
     font-size: 25px;
 }
@@ -433,18 +515,28 @@ footer .logo {
         margin: 20px 0px !important;
     }
 }
-@media only screen and (max-width: 575px) {
+/* @media only screen and (max-width: 575px) {
     .form-cont {
         width: 350px;
         height: 625px;
         bottom: 675px;
     }
-}
+} */
 /* @media only screen and (max-width: 569px) {
     .carousel-item .height{
         height: 300px;
     }
 } */
+
+@media only screen and (max-width: 1000px) {
+    .promote .text-cont {
+        width: 100%;
+    }
+    .promote {
+        padding: 30px !important;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .interface li:last-child {
         display: block !important;
@@ -457,6 +549,7 @@ footer .logo {
 @media only screen and (max-width: 1300px) {
     #slideshow {
         width: 100% !important;
+        height: 100% !important;
     }
     .carousel-item .img-cont {
         display: none !important;
@@ -473,10 +566,16 @@ footer .logo {
     h1 {
         font-size: 40px;
     }
+    #slideshow {
+        height: 350px !important;
+    }
 }
 @media only screen and (max-width: 450px) {
     h1 {
         font-size: 30px;
+    }
+    #slideshow {
+        height: 400px !important;
     }
 }
 
@@ -503,10 +602,22 @@ footer .logo {
     .blogs li {
         font-size: 12px;
     }
+    .about-container, .about-icon, .about-container .img-cont {
+        height: 100% !important;
+    }
+    .about-icon {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 1100px) {
     .services article {
         width: 80% !important;
+    }
+    .about-icon {
+        height: 100%;
+    }
+    .about-container {
+        width: 100% !important;
     }
 }
 
@@ -524,6 +635,7 @@ footer .logo {
     }
     #slideshow {
         padding: 30px;
+        height: 400px;
     }
     .blogs .article-cont {
         width: 100% !important;
@@ -533,6 +645,16 @@ footer .logo {
     }
     .services button {
         margin: 0px auto !important;
+    }
+    .form-cont {
+        position: static;
+        border-top: 1px solid #ccc;
+    }
+    .reach-out .cover {
+        display: none;
+    }
+    .reach-out {
+        height: 100%;
     }
 }
 
@@ -586,13 +708,19 @@ footer .logo {
     }
 }
 
+@media only screen and (max-width: 1006px) {
+    .advantages .box {
+        width: 100%;
+    }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1300px) {
     .about-container{
-        width: 800px;
+        height: 100% !important
     }
-    .about-icon{
+    /* .about-icon{
         height: 430px;
-    }
+    } */
     .about h2{
         font-size: 45px;
     }
@@ -601,21 +729,36 @@ footer .logo {
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 991px) {
-    .about-container{
+@media only screen and (max-width: 991px) {
+    /* .about-container{
         width: 800px;
+    } */
+    .about-container, .about-icon, .about-container .img-cont{
+        height: 60% !important
+    }
+    .about-icon {
+        width: 60%;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 799px) {
-    .about-container{
+    /* .about-container{
         width: 600px;
-    }
+    } */
 }
 @media only screen and (min-width: 430px) and (max-width: 599px) {
-    .about-icon{
+    /* .about-icon{
         height: 300px;
-    }
-    .about-container{
+    } */
+    /* .about-container{
         width: 430px;
+    } */
+}
+
+@media only screen and (max-width: 1452px) {
+    .about p {
+        font-size: 18px;
+    }
+    .about-container {
+        width: 70%;
     }
 }
