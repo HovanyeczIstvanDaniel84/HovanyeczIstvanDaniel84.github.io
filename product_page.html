@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product_page.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-title" id="offcanvasNavbarLabel" href="index.html">
+                            <img src="images/logo.png" alt="" class="logo show-swap">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="Keresés" aria-label="Keresés">
+                            <button class="btn" type="button"><img src="images/search.png" alt=""
+                                    class="icon"></button>
+                        </form>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3my-auto">
+                            <li class="nav-item text">
+                                <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+                            </li>
+                            <li class="nav-item text dropdown w-lg-auto dropdown-fullwidth">
+                                <a class="nav-link dropdown-toggle" href="webshop.html" data-bs-toggle="dropdown"
+                                    aria-expanded="false" role="button">Webshop</a>
+                                <div class="dropdown-menu">
+                                    <div class="container d-flex menu">
+                                        <div class="categories d-flex justify-content-center flex-wrap">
+                                            <a class="opt" href="webshop.html">
+                                                <div class="img-cont">
+                                                    <img src="images/category_cpu.png" alt="">
+                                                </div>
+                                                <h4>Processzorok</h4>
+                                            </a>
+                                            <a class="opt" href="webshop.html">
+                                                <div class="img-cont">
+                                                    <img src="images/category_motherboard.png" alt="">
+                                                </div>
+                                                <h4>Alaplapok</h4>
+                                            </a>
+                                            <a class="opt" href="webshop.html">
+                                                <div class="img-cont">
+                                                    <img src="images/category_gpu.png" alt="">
+                                                </div>
+                                                <h4>Videókártyák</h4>
+                                            </a>
+                                            <a class="opt" href="webshop.html">
+                                                <div class="img-cont">
+                                                    <img src="images/category_memory.png" alt="">
+                                                </div>
+                                                <h4>Memóriák</h4>
+                                            </a>
+                                            <a class="opt" href="webshop.html">
+                                                <div class="img-cont">
+                                                    <img src="images/category_storage.png" alt="">
+                                                </div>
+                                                <h4>Háttértárak</h4>
+                                            </a>
+                                            <a class="opt" href="webshop.html">
+                                                <div class="img-cont">
+                                                    <img src="images/category_power_supply.png" alt="">
+                                                </div>
+                                                <h4>Tápegységek</h4>
+                                            </a>
+                                            <a class="opt" href="webshop.html">
+                                                <div class="img-cont">
+                                                    <img src="images/category_cooler.png" alt="">
+                                                </div>
+                                                <h4>Processzor hűtők</h4>
+                                            </a>
+                                            <a class="opt" href="webshop.html">
+                                                <div class="img-cont">
+                                                    <img src="images//category_case.png" alt="">
+                                                </div>
+                                                <h4>Gépházak</h4>
+                                            </a>
+                                        </div>
+                                        <div class="other-col">
+                                            <h3>Számítógépek</h3>
+                                            <ul>
+                                                <li><a href="webshop.html">Irodai</a></li>
+                                                <li><a href="webshop.html">Munkaállomás</a></li>
+                                                <li><a href="webshop.html">Játék</a></li>
+                                                <li><a href="webshop.html">Kiszolgáló</a></li>
+                                            </ul>
+                                            <h3>Perifériák</h3>
+                                            <ul>
+                                                <li><a href="webshop.html">Egerek</a></li>
+                                                <li><a href="webshop.html">Billenytűzetek</a></li>
+                                                <li><a href="webshop.html">Monitorok</a></li>
+                                                <li><a href="webshop.html">Hangfalak</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menu-alternate">
+                                        <ul>
+                                            <li><a href="webshop.html">Processzorok</a></li>
+                                            <li><a href="webshop.html">Alaplapok</a></li>
+                                            <li><a href="webshop.html">Videókártyák</a></li>
+                                            <li><a href="webshop.html">Memóriák</a></li>
+                                            <li><a href="webshop.html">Háttértárak</a></li>
+                                            <li><a href="webshop.html">Tápegységek</a></li>
+                                            <li><a href="webshop.html">Processzor hűtők</a></li>
+                                            <li><a href="webshop.html">Gépházak</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="nav-item text">
+                                <a class="nav-link" href="#">Rólunk</a>
+                            </li>
+                            <li class="nav-item text">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                            <li class="nav-item me-2 button-group d-none">
+                                <button class="btn btn-outline-dark" type="button">Bejelentkezés</button>
+                                <button class="btn btn-dark" type="button">Regisztráció</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="interface d-flex my-auto justify-content-end">
+                    <li>
+                        <a href="#"><img src="images/shopping-cart.png" alt="Kosár" title="Kosár" class="icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/heart.png" alt="Kívánságlista" title="Kívánságlista"
+                                class="icon"></a>
+                    </li>
+                    <li class="d-none">
+                        <a href="#"><img src="images/user.png" alt="Fiókom" title="Fiókom" class="icon"></a>
+                    </li>
+                </ul>
+                <div class="button-group d-flex">
+                    <button class="btn btn-outline-dark" type="button">Bejelentkezés</button>
+                    <button class="btn btn-dark" type="button">Regisztráció</button>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="split-screen d-flex">
+        <main>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Főoldal</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Boolean Rogue Gaming PC</li>
+                </ol>
+            </nav>
+            <section class="head d-flex justify-content-center">
+                <div class="showcase me-5">
+
+                    <div class="images d-flex flex-column align-items-center">
+                        <div class="img-cont">
+                            <img src="images/product1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex gallery mt-2">
+                            <a href="#"><img src="images/product1-removebg-preview.png" alt=""></a>
+                            <a href="#"><img src="images/product2-removebg-preview.png" alt=""></a>
+                            <a href="#"><img src="images/product3-removebg-preview.png" alt=""></a>
+                            <a href="#"><img src="images/product4-removebg-preview.png" alt=""></a>
+                            <a href="#"><img src="images/product5-removebg-preview.png" alt=""></a>
+                        </div>
+                    </div>
+                    <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consequuntur nam
+                        possimus!
+                        Ipsum hic, ratione reiciendis dignissimos nostrum voluptates aliquam nemo illo consequatur
+                        incidunt commodi, nobis quisquam velit pariatur laboriosam?</p>
+                </div>
+                <div class="interact d-flex flex-column">
+                    <h1>Boolean Rogue Gaming PC</h1>
+                    <div class="rating d-flex">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span>(54 értékelés)</span>
+                    </div>
+                    <p id="price" class="mt-3"><strong class="me-3">639 999 Ft</strong> <s>799 999 Ft</s> <span
+                            class="ms-3">26%-os
+                            kedvezmény</span></p>
+                    <hr class="mt-4 mb-4">
+                    <div class="buy">
+                        <form action="" class="d-flex justify-content-center align-items-center">
+                            <a href="#"><i class="bi bi-dash-lg"></i></a>
+                            <input type="number" name="" id="amount" min="1" max="5" value="1" readonly>
+                            <a href="#"><i class="bi bi-plus-lg"></i></a>
+                        </form>
+                        <div class="button-group mt-3 d-flex">
+                            <button type="button" class="btn btn-dark"><i class="bi bi-bag-plus"></i> Kosárba
+                                helyez</button>
+                            <button tpye="button" class="btn btn-secondary btn-light"><i
+                                    class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                    <hr class="mt-4 mb-4">
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <th>Termékkód:</th>
+                                <td>BGC001</td>
+                            </tr>
+                            <tr>
+                                <th>Elérhetőség:</th>
+                                <td><span class="badge text-bg-success">Raktáron</span></td>
+                            </tr>
+                            <tr>
+                                <th>Típus:</th>
+                                <td>Asztali számítógép</td>
+                            </tr>
+                            <tr>
+                                <th>Kiszállítás: </th>
+                                <td>3-5 munkanap</td>
+                            </tr>
+                        </table>
+                        <div class="filters mt-5">
+                            <span class="badge text-bg-dark">#számítógép</span>
+                            <span class="badge text-bg-dark">#játék</span>
+                            <span class="badge text-bg-dark">#asztali</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="desc mt-5">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Leírás</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#tables"
+                            type="button" role="tab" aria-controls="tables" aria-selected="false">Specifikáció</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">Értékelések</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                            data-bs-target="#disabled-tab-pane" type="button" role="tab"
+                            aria-controls="disabled-tab-pane" aria-selected="false" disabled>Benchmark</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <h4>Termék infó</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati sint delectus, tempora
+                            quasi
+                            quis explicabo vero illum officia voluptatum repellendus magnam ratione porro nesciunt
+                            dolor?
+                            Maxime dolor ducimus voluptates aspernatur.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit molestias ad voluptates harum
+                            consequatur iure ipsa reiciendis ipsam aperiam modi excepturi sed eveniet amet ipsum
+                            architecto
+                            asperiores, ullam optio. Eaque!</p>
+                        <h4 class="mt-5">Termék tartalma</h4>
+                        <ul class="listing">
+                            <li><a href="#">Specifikációban</a> leírt alkatrészek</li>
+                            <li>1 db HDMI kábel</li>
+                            <li>1 db Tartalék IO Shield</li>
+                            <li>2 db Tápkábel</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit molestias ad voluptates harum
+                            consequatur iure ipsa reiciendis ipsam aperiam modi excepturi sed eveniet amet ipsum
+                            architecto
+                            asperiores, ullam optio. Eaque!</p>
+
+                    </div>
+                    <div class="tab-pane fade" id="tables" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <h4>Részletek</h4>
+                        <div class="d-flex justify-content-center">
+                            <table class="me-5">
+                                <tr>
+                                    <th>Processzor</th>
+                                    <td>Intel core i5 13400F Processzor (4.60 GHz)</td>
+                                </tr>
+                                <tr>
+                                    <th>Alaplap</th>
+                                    <td>Asus B760 FCLGA1700 Alaplap</td>
+                                </tr>
+                                <tr>
+                                    <th>Videókártya</th>
+                                    <td>Nvidia Asus Rog Strix 3080 12 Gb Videókártya</td>
+                                </tr>
+                                <tr>
+                                    <th>Memória</th>
+                                    <td>32 Gb HyperX memória (DDR4)</td>
+                                </tr>
+                                <tr>
+                                    <th>Háttértár</th>
+                                    <td>1 Tb Nvme SSD, Samsung 970 Evo</td>
+                                </tr>
+                                <tr>
+                                    <th>Gépház</th>
+                                    <td>Corsair iCUE 4000D Mid-Tower Számítógépház ATX méret</td>
+                                </tr>
+                            </table>
+                            <table class="halved">
+                                <tr>
+                                    <th>Processzor hűtő</th>
+                                    <td>Be Quiet Dark Rock 4 Pro 250W</td>
+                                </tr>
+                                <tr>
+                                    <th>Tápegység</th>
+                                    <td>Pure Power 12M 850 W ATX 3.0, 80 Plus Gold</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        <h4>Értékelések</h4>
+                        <div class="rating d-flex mb-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span class="ms-3 me-3">4.2/5</span>
+                            <span>4, 853 értékelés</span>
+                        </div>
+                        <div class="d-flex justify-content-center reviews-cont">
+                            <div class="ratings me-5 p-3">
+                                <div class="cont">
+                                    <p><span>5</span><i class="bi bi-star-fill"></i></p>
+                                    <div class="rate-container">
+                                        <div></div>
+                                    </div><span>5 db</span>
+                                </div>
+                                <div class="cont">
+                                    <p><span>4</span><i class="bi bi-star-fill"></i></p>
+                                    <div class="rate-container">
+                                        <div></div>
+                                    </div><span>5 db</span>
+                                </div>
+                                <div class="cont">
+                                    <p><span>3</span><i class="bi bi-star-fill"></i></p>
+                                    <div class="rate-container">
+                                        <div></div>
+                                    </div><span>5 db</span>
+                                </div>
+                                <div class="cont">
+                                    <p><span>2</span><i class="bi bi-star-fill"></i></p>
+                                    <div class="rate-container">
+                                        <div></div>
+                                    </div><span>5 db</span>
+                                </div>
+                                <div class="cont">
+                                    <p><span>1</span><i class="bi bi-star-fill"></i></p>
+                                    <div class="rate-container">
+                                        <div></div>
+                                    </div><span>5 db</span>
+                                </div>
+                                <div class="offer mt-5 mb-5">
+                                    <h5>
+                                        Értékeld Te is!
+                                    </h5>
+                                    <p>Lorem ipsum dolor sit amet!</p>
+                                    <a href="#to-form" class="btn btn-dark">Értékelés</a>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <div class="top-section d-flex justify-content-between">
+                                    <h4>Megjegyzések</h4>
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                    <select name="" id="" class="form-select">
+                                        <option value="1">Legújabb</option>
+                                        <option value="2">Legrégebbi</option>
+                                        <option value="3">Legjobb</option>
+                                        <option value="4">Legrosszabb</option>
+                                    </select>
+                                </div>
+                                <div class="article-cont d-flex flex-column align-items-center">
+                                    <article class="mt-5">
+                                        <div class="article-head d-flex justify-content-start align-items-center">
+                                            <div class="img-cont me-3">
+                                                <img src="images/profile.png" alt="" class="icon">
+                                            </div>
+                                            <div class="text-cont">
+                                                <h5>John Doe</h5>
+                                                <p>2023. Dec. 5.</p>
+                                            </div>
+                                        </div>
+                                        <div class="rate mt-3 mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h5>Title of comment</h5>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet odio
+                                                necessitatibus et vero rerum magnam animi nobis voluptates. Minus, nam
+                                                officiis
+                                                sequi ut molestias maxime officia nemo quos esse soluta?</p>
+                                        </div>
+                                        <div class="footer d-flex justify-content-end">
+                                            <a href="#" class="me-3"><i class="bi bi-hand-thumbs-up"></i> Segítőkész</a>
+                                            <a href="#"><i class="bi bi-flag"></i> Jelentés</a>
+                                        </div>
+                                    </article>
+                                    <article class="mt-5">
+                                        <div class="article-head d-flex justify-content-start align-items-center">
+                                            <div class="img-cont me-3">
+                                                <img src="images/profile.png" alt="" class="icon">
+                                            </div>
+                                            <div class="text-cont">
+                                                <h5>John Doe</h5>
+                                                <p>2023. Dec. 5.</p>
+                                            </div>
+                                        </div>
+                                        <div class="rate mt-3 mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h5>Title of comment</h5>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet odio
+                                                necessitatibus et vero rerum magnam animi nobis voluptates. Minus, nam
+                                                officiis
+                                                sequi ut molestias maxime officia nemo quos esse soluta?</p>
+                                        </div>
+                                        <div class="footer d-flex justify-content-end">
+                                            <a href="#" class="me-3"><i class="bi bi-hand-thumbs-up"></i> Segítőkész</a>
+                                            <a href="#"><i class="bi bi-flag"></i> Jelentés</a>
+                                        </div>
+                                    </article>
+                                    <article class="mt-5">
+                                        <div class="article-head d-flex justify-content-start align-items-center">
+                                            <div class="img-cont me-3">
+                                                <img src="images/profile.png" alt="" class="icon">
+                                            </div>
+                                            <div class="text-cont">
+                                                <h5>John Doe</h5>
+                                                <p>2023. Dec. 5.</p>
+                                            </div>
+                                        </div>
+                                        <div class="rate mt-3 mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h5>Title of comment</h5>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet odio
+                                                necessitatibus et vero rerum magnam animi nobis voluptates. Minus, nam
+                                                officiis
+                                                sequi ut molestias maxime officia nemo quos esse soluta?</p>
+                                        </div>
+                                        <div class="footer d-flex justify-content-end">
+                                            <a href="#" class="me-3"><i class="bi bi-hand-thumbs-up"></i> Segítőkész</a>
+                                            <a href="#"><i class="bi bi-flag"></i> Jelentés</a>
+                                        </div>
+                                    </article>
+                                    <article class="mt-5">
+                                        <div class="article-head d-flex justify-content-start align-items-center">
+                                            <div class="img-cont me-3">
+                                                <img src="images/profile.png" alt="" class="icon">
+                                            </div>
+                                            <div class="text-cont">
+                                                <h5>John Doe</h5>
+                                                <p>2023. Dec. 5.</p>
+                                            </div>
+                                        </div>
+                                        <div class="rate mt-3 mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h5>Title of comment</h5>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet odio
+                                                necessitatibus et vero rerum magnam animi nobis voluptates. Minus, nam
+                                                officiis
+                                                sequi ut molestias maxime officia nemo quos esse soluta?</p>
+                                        </div>
+                                        <div class="footer d-flex justify-content-end">
+                                            <a href="#" class="me-3"><i class="bi bi-hand-thumbs-up"></i> Segítőkész</a>
+                                            <a href="#"><i class="bi bi-flag"></i> Jelentés</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <form action="" id="comment" class="d-flex flex-column pt-5">
+                                    <h4 id="to-form">Értékelés</h4>
+                                    <div class="rating-input mt-3 mb-3">
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <label for="headline" class="mb-3">Cím</label>
+                                    <input type="text" id="headline" class="mb-3">
+                                    <label for="comment-content" class="mb-3">Üzenet</label>
+                                    <textarea id="comment-content" cols="30" rows="10" class="mb-3"></textarea>
+                                    <div class="button-group mt-3 d-flex justify-content-end">
+                                        <button type="button" class="btn btn-secondary me-3">Mégse</button>
+                                        <button type="button" class="btn btn-success">Küldés</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                            tabindex="0"></div>
+                    </div>
+            </section>
+        </main>
+        <aside id="config">
+            <h2 class="text-center">Konfiguráció</h2>
+            <hr>
+            <div class="container d-flex flex-column align-items-center">
+                <article class="cpu mb-3">
+                    <div class="d-flex justify-content-between brand">
+                        <h3 class="mb-3">Alaplap</h3>
+                        <img src="images/asus.png" alt="" class="icon">
+                    </div>
+                    <div class="head d-flex justify-content-start align-items-center mb-3">
+                        <div class="img-cont me-3">
+                            <img src="images/b760.png" alt="">
+                        </div>
+                        <h4><a href="#">Asus B760 FCLGA1700 Alaplap</a></h4>
+                    </div>
+                    <div class="body d-flex align-items-center justify-content-between mb-3">
+                        <div class="info-block">
+                            <p class="label">Ár:</p>
+                            <p class="value">89 999 Ft</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="label">Értékesítő:</p>
+                            <img src="images/amazon.png" alt="" class="icon">
+                        </div>
+                        <a href="#">Vásárlás külön</a>
+                    </div>
+                    <div class="options d-flex justify-content-between pb-3">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                            Konfigurálás</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                            Eltávolítás</button>
+                    </div>
+                </article>
+                <article class="cpu mb-3">
+                    <div class="d-flex justify-content-between brand">
+                        <h3 class="mb-3">Processzor</h3>
+                        <img src="images/intel.png" alt="" class="icon">
+                    </div>
+                    <div class="head d-flex justify-content-start align-items-center mb-3">
+                        <div class="img-cont me-3">
+                            <img src="images/intel_i5.png" alt="">
+                        </div>
+                        <h4><a href="#">Intel core i5 13400F Processzor (4.60 GHz)</a></h4>
+                    </div>
+                    <div class="body d-flex align-items-center justify-content-between mb-3">
+                        <div class="info-block">
+                            <p class="label">Ár:</p>
+                            <p class="value">89 999 Ft</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="label">Értékesítő:</p>
+                            <img src="images/amazon.png" alt="" class="icon">
+                        </div>
+                        <a href="#">Vásárlás külön</a>
+                    </div>
+                    <div class="options d-flex justify-content-between pb-3">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                            Konfigurálás</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                            Eltávolítás</button>
+                    </div>
+                </article>
+                <article class="gpu mb-3">
+                    <div class="d-flex justify-content-between brand">
+                        <h3 class="mb-3">Videókártya</h3>
+                        <img src="images/nvidia.png" alt="" class="icon">
+                    </div>
+                    <div class="head d-flex justify-content-start align-items-center mb-3">
+                        <div class="img-cont me-3">
+                            <img src="images/rtx3080.png" alt="">
+                        </div>
+                        <h4><a href="#">Nvidia Asus Rog Strix 3080 12 Gb Videókártya</a></h4>
+                    </div>
+                    <div class="body d-flex align-items-center justify-content-between mb-3">
+                        <div class="info-block">
+                            <p class="label">Ár:</p>
+                            <p class="value">399 999 Ft</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="label">Értékesítő:</p>
+                            <img src="images/amazon.png" alt="" class="icon">
+                        </div>
+                        <a href="#">Vásárlás külön</a>
+                    </div>
+                    <div class="options d-flex justify-content-between pb-3">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                            Konfigurálás</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                            Eltávolítás</button>
+                    </div>
+                </article>
+                <article class="memory mb-3">
+                    <div class="d-flex justify-content-between brand">
+                        <h3 class="mb-3">Memória</h3>
+                        <img src="images/hyperx.png" alt="" class="icon">
+                    </div>
+                    <div class="head d-flex justify-content-start align-items-center mb-3">
+                        <div class="img-cont me-3">
+                            <img src="images/hyperx_fury.png" alt="">
+                        </div>
+                        <h4><a href="#">2x16 Gb HyperX Fury memória (DDR4)</a></h4>
+                    </div>
+                    <div class="body d-flex align-items-center justify-content-between mb-3">
+                        <div class="info-block">
+                            <p class="label">Ár:</p>
+                            <p class="value">399 999 Ft</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="label">Értékesítő:</p>
+                            <img src="images/amazon.png" alt="" class="icon">
+                        </div>
+                        <a href="#">Vásárlás külön</a>
+                    </div>
+                    <div class="options d-flex justify-content-between pb-3">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                            Konfigurálás</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                            Eltávolítás</button>
+                    </div>
+                </article>
+                <article class="storage mb-3">
+                    <div class="d-flex justify-content-between brand">
+                        <h3 class="mb-3">Háttértár</h3>
+                        <img src="images/samsung.png" alt="" class="icon">
+                    </div>
+                    <div class="head d-flex justify-content-start align-items-center mb-3">
+                        <div class="img-cont me-3">
+                            <img src="images/970evo.png" alt="">
+                        </div>
+                        <h4><a href="#">1 Tb Nvme SSD, Samsung 970 Evo</a></h4>
+                    </div>
+                    <div class="body d-flex align-items-center justify-content-between mb-3">
+                        <div class="info-block">
+                            <p class="label">Ár:</p>
+                            <p class="value">399 999 Ft</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="label">Értékesítő:</p>
+                            <img src="images/amazon.png" alt="" class="icon">
+                        </div>
+                        <a href="#">Vásárlás külön</a>
+                    </div>
+                    <div class="options d-flex justify-content-between pb-3">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                            Konfigurálás</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                            Eltávolítás</button>
+                    </div>
+                </article>
+                <article class="cpu-cooler mb-3">
+                    <div class="d-flex justify-content-between brand">
+                        <h3 class="mb-3">Processzor hűtő</h3>
+                        <img src="images/be_quiet.png" alt="" class="icon">
+                    </div>
+                    <div class="head d-flex justify-content-start align-items-center mb-3">
+                        <div class="img-cont me-3">
+                            <img src="images/be-quiet.png" alt="">
+                        </div>
+                        <h4><a href="#">Be Quiet Dark Rock 4 Pro 250W</a></h4>
+                    </div>
+                    <div class="body d-flex align-items-center justify-content-between mb-3">
+                        <div class="info-block">
+                            <p class="label">Ár:</p>
+                            <p class="value">399 999 Ft</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="label">Értékesítő:</p>
+                            <img src="images/amazon.png" alt="" class="icon">
+                        </div>
+                        <a href="#">Vásárlás külön</a>
+                    </div>
+                    <div class="options d-flex justify-content-between pb-3">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                            Konfigurálás</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                            Eltávolítás</button>
+                    </div>
+                </article>
+                <article class="cpu-cooler mb-3">
+                    <div class="d-flex justify-content-between brand">
+                        <h3 class="mb-3">Gépház</h3>
+                        <img src="images/corsair.png" alt="" class="icon">
+                    </div>
+                    <div class="head d-flex justify-content-start align-items-center mb-3">
+                        <div class="img-cont me-3">
+                            <img src="images/corsair_case.png" alt="">
+                        </div>
+                        <h4><a href="#">Corsair iCUE 4000D Mid-Tower Számítógépház ATX méret</a></h4>
+                    </div>
+                    <div class="body d-flex align-items-center justify-content-between mb-3">
+                        <div class="info-block">
+                            <p class="label">Ár:</p>
+                            <p class="value">399 999 Ft</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="label">Értékesítő:</p>
+                            <img src="images/amazon.png" alt="" class="icon">
+                        </div>
+                        <a href="#">Vásárlás külön</a>
+                    </div>
+                    <div class="options d-flex justify-content-between pb-3">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                            Konfigurálás</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                            Eltávolítás</button>
+                    </div>
+                </article>
+                <article class="cpu-cooler mb-3">
+                    <div class="d-flex justify-content-between brand">
+                        <h3 class="mb-3">Tápegység</h3>
+                        <img src="images/be_quiet.png" alt="" class="icon">
+                    </div>
+                    <div class="head d-flex justify-content-start align-items-center mb-3">
+                        <div class="img-cont me-3">
+                            <img src="images/be_quiet_power_supply.png" alt="">
+                        </div>
+                        <h4><a href="#">Pure Power 12M 850 W ATX 3.0, 80 Plus Gold</a></h4>
+                    </div>
+                    <div class="body d-flex align-items-center justify-content-between mb-3">
+                        <div class="info-block">
+                            <p class="label">Ár:</p>
+                            <p class="value">399 999 Ft</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="label">Értékesítő:</p>
+                            <img src="images/amazon.png" alt="" class="icon">
+                        </div>
+                        <a href="#">Vásárlás külön</a>
+                    </div>
+                    <div class="options d-flex justify-content-between pb-3">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                            Konfigurálás</button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                            Eltávolítás</button>
+                    </div>
+                </article>
+            </div>
+        </aside>
+    </div>
+    <section class="reach-out">
+        <img src="images/cover_image2.png" alt="" class="cover">
+        <div class="form-cont">
+            <form class="row g-3 needs-validation" novalidate>
+                <p>Kérdése van? Üzenjen nekünk! Két munkanapon belül felvesszük Önnel a kapcsolatot.</p>
+                <div class="col-sm-6">
+                    <label for="inputName4" class="form-label">Név</label>
+                    <input type="text" class="form-control" id="inputName4" required>
+                    <div class="invalid-feedback">
+                        Ezen mező kitöltése kötelező.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="phonNum" class="form-label">Telefonszám</label>
+                    <input type="tel" class="form-control" id="phonNum" required>
+                    <div class="invalid-feedback">
+                        Ezen mező kitöltése kötelező.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" required>
+                    <div class="invalid-feedback">
+                        Kérjük, valós címet adjon meg!
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="county-select" class="form-label">Vármegye</label>
+                    <select class="form-select form-control" aria-label="County" id="county-select" required>
+                        <option selected disabled value="">Válasszon vármegyét</option>
+                        <option value="1">Győr-Moson-Sopron</option>
+                        <option value="2">Vas</option>
+                        <option value="3">Zala</option>
+                        <option value="4">Somogy</option>
+                        <option value="5">Baranya</option>
+                        <option value="6">Veszprém</option>
+                        <option value="7">Komárom-Esztergom</option>
+                        <option value="8">Fejér</option>
+                        <option value="9">Tolna</option>
+                        <option value="10">Pest</option>
+                        <option value="11">Bács-Kiskun</option>
+                        <option value="12">Nógrád</option>
+                        <option value="13">Heves</option>
+                        <option value="14">Jász-Nagykun-Szolnok</option>
+                        <option value="15">Csongrád-Csanád</option>
+                        <option value="16">Borsod-Abaúj-Zemplén</option>
+                        <option value="17">Szabolcs-Szatmár-Bereg</option>
+                        <option value="18">Hajdú-Bihar</option>
+                        <option value="19">Békés</option>
+                        <option value="20">Külföld</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Kérjük, válassza ki megyét, ahol tartózkodik.
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <label for="messageInput" class="form-label">Üzenet</label>
+                    <textarea name="message" id="messageInput" class="d-block w-100" rows="4" cols="30"
+                        required></textarea>
+                    <div class="invalid-feedback">
+                        Ezen mező kitöltése kötelező!
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">
+                            Elolvastam és megértettem a <a href="#">Szerződési feltételekben</a> foglaltakat
+                        </label>
+                        <div class="invalid-feedback">
+                            Kérjük, fogadja el a feltételeinket!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-dark ms-auto d-block">Küldés</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="" class="logo">
+                        </div>
+                        <div class="d-flex mt-4 mb-5 socials">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h6>Kontakt</h6>
+                        <ul>
+                            <li><a href="#">Telefonszám</a></li>
+                            <li><a href="#">E-mail</a></li>
+                            <li><a href="#">Manager</a></li>
+                            <li><a href="#">Székhely</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h6>Információk</h6>
+                        <ul>
+                            <li><a href="#">Szerződési feltételek</a></li>
+                            <li><a href="#">Nyitvatartás</a></li>
+                            <li><a href="#">Kiszállítás</a></li>
+                            <li><a href="#">GYIK</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h6>Hírlevél</h6>
+                        <div class="footer-newsletter">
+                            <p>Legyen Ön az első, aki értesül az újdonságokról, akciókról és promóciókról!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Add meg az E-mailed" id="newsletter">
+                            </form>
+                            <button type="submit" class="blue-button mt-3">Feliratkozás</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paying-methods d-flex justify-content-around">
+                <img src="images/visa.png" alt="Visa" title="Visa" class="icon">
+                <img src="images/paypal.png" alt="PayPal" title="PayPal" class="icon">
+                <img src="images/mastercard.png" alt="MasterCard" title="MasterCard" class="icon">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-copyright-text">
+                        <p>2024 &copy; <a href="#"><span>www.boolean.com</span></a>, minden jog fenntartva!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button type="button" class="btn btn-secondary toggle-menu" data-bs-toggle="offcanvas" data-bs-target="#configMenu"
+        role="button" aria-controls="content-menu"><i class="bi bi-caret-right-fill"></i></button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="configMenu" aria-labelledby="configMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="configMenuLabel">Konfiguráció</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="config">
+                <div class="container d-flex flex-column align-items-center">
+                    <article class="motherboard mb-3">
+                        <div class="d-flex justify-content-between brand">
+                            <h3 class="mb-3">Alaplap</h3>
+                            <img src="images/asus.png" alt="" class="icon">
+                        </div>
+                        <div class="head d-flex justify-content-start align-items-center mb-3">
+                            <div class="img-cont me-3">
+                                <img src="images/b760.png" alt="">
+                            </div>
+                            <h4><a href="#">Asus B760 FCLGA1700 Alaplap</a></h4>
+                        </div>
+                        <div class="body d-flex align-items-center justify-content-between mb-3">
+                            <div class="info-block">
+                                <p class="label">Ár:</p>
+                                <p class="value">89 999 Ft</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="label">Értékesítő:</p>
+                                <img src="images/amazon.png" alt="" class="icon">
+                            </div>
+                            <a href="#">Vásárlás külön</a>
+                        </div>
+                        <div class="options d-flex justify-content-between pb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                                Konfigurálás</button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                                Eltávolítás</button>
+                        </div>
+                    </article>
+                    <article class="cpu mb-3">
+                        <div class="d-flex justify-content-between brand">
+                            <h3 class="mb-3">Processzor</h3>
+                            <img src="images/intel.png" alt="" class="icon">
+                        </div>
+                        <div class="head d-flex justify-content-start align-items-center mb-3">
+                            <div class="img-cont me-3">
+                                <img src="images/intel_i5.png" alt="">
+                            </div>
+                            <h4><a href="#">Intel core i5 13400F Processzor (4.60 GHz)</a></h4>
+                        </div>
+                        <div class="body d-flex align-items-center justify-content-between mb-3">
+                            <div class="info-block">
+                                <p class="label">Ár:</p>
+                                <p class="value">89 999 Ft</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="label">Értékesítő:</p>
+                                <img src="images/amazon.png" alt="" class="icon">
+                            </div>
+                            <a href="#">Vásárlás külön</a>
+                        </div>
+                        <div class="options d-flex justify-content-between pb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                                Konfigurálás</button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                                Eltávolítás</button>
+                        </div>
+                    </article>
+                    <article class="gpu mb-3">
+                        <div class="d-flex justify-content-between brand">
+                            <h3 class="mb-3">Videókártya</h3>
+                            <img src="images/nvidia.png" alt="" class="icon">
+                        </div>
+                        <div class="head d-flex justify-content-start align-items-center mb-3">
+                            <div class="img-cont me-3">
+                                <img src="images/rtx3080.png" alt="">
+                            </div>
+                            <h4><a href="#">Nvidia Asus Rog Strix 3080 12 Gb Videókártya</a></h4>
+                        </div>
+                        <div class="body d-flex align-items-center justify-content-between mb-3">
+                            <div class="info-block">
+                                <p class="label">Ár:</p>
+                                <p class="value">399 999 Ft</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="label">Értékesítő:</p>
+                                <img src="images/amazon.png" alt="" class="icon">
+                            </div>
+                            <a href="#">Vásárlás külön</a>
+                        </div>
+                        <div class="options d-flex justify-content-between pb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                                Konfigurálás</button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                                Eltávolítás</button>
+                        </div>
+                    </article>
+                    <article class="memory mb-3">
+                        <div class="d-flex justify-content-between brand">
+                            <h3 class="mb-3">Memória</h3>
+                            <img src="images/hyperx.png" alt="" class="icon">
+                        </div>
+                        <div class="head d-flex justify-content-start align-items-center mb-3">
+                            <div class="img-cont me-3">
+                                <img src="images/hyperx_fury.png" alt="">
+                            </div>
+                            <h4><a href="#">2x16 Gb HyperX Fury memória (DDR4)</a></h4>
+                        </div>
+                        <div class="body d-flex align-items-center justify-content-between mb-3">
+                            <div class="info-block">
+                                <p class="label">Ár:</p>
+                                <p class="value">399 999 Ft</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="label">Értékesítő:</p>
+                                <img src="images/amazon.png" alt="" class="icon">
+                            </div>
+                            <a href="#">Vásárlás külön</a>
+                        </div>
+                        <div class="options d-flex justify-content-between pb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                                Konfigurálás</button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                                Eltávolítás</button>
+                        </div>
+                    </article>
+                    <article class="storage mb-3">
+                        <div class="d-flex justify-content-between brand">
+                            <h3 class="mb-3">Háttértár</h3>
+                            <img src="images/samsung.png" alt="" class="icon">
+                        </div>
+                        <div class="head d-flex justify-content-start align-items-center mb-3">
+                            <div class="img-cont me-3">
+                                <img src="images/970evo.png" alt="">
+                            </div>
+                            <h4><a href="#">1 Tb Nvme SSD, Samsung 970 Evo</a></h4>
+                        </div>
+                        <div class="body d-flex align-items-center justify-content-between mb-3">
+                            <div class="info-block">
+                                <p class="label">Ár:</p>
+                                <p class="value">399 999 Ft</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="label">Értékesítő:</p>
+                                <img src="images/amazon.png" alt="" class="icon">
+                            </div>
+                            <a href="#">Vásárlás külön</a>
+                        </div>
+                        <div class="options d-flex justify-content-between pb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                                Konfigurálás</button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                                Eltávolítás</button>
+                        </div>
+                    </article>
+                    <article class="cpu-cooler mb-3">
+                        <div class="d-flex justify-content-between brand">
+                            <h3 class="mb-3">Processzor hűtő</h3>
+                            <img src="images/be_quiet.png" alt="" class="icon">
+                        </div>
+                        <div class="head d-flex justify-content-start align-items-center mb-3">
+                            <div class="img-cont me-3">
+                                <img src="images/be-quiet.png" alt="">
+                            </div>
+                            <h4><a href="#">Be Quiet Dark Rock 4 Pro 250W</a></h4>
+                        </div>
+                        <div class="body d-flex align-items-center justify-content-between mb-3">
+                            <div class="info-block">
+                                <p class="label">Ár:</p>
+                                <p class="value">399 999 Ft</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="label">Értékesítő:</p>
+                                <img src="images/amazon.png" alt="" class="icon">
+                            </div>
+                            <a href="#">Vásárlás külön</a>
+                        </div>
+                        <div class="options d-flex justify-content-between pb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                                Konfigurálás</button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                                Eltávolítás</button>
+                        </div>
+                    </article>
+                    <article class="cpu-cooler mb-3">
+                        <div class="d-flex justify-content-between brand">
+                            <h3 class="mb-3">Gépház</h3>
+                            <img src="images/corsair.png" alt="" class="icon">
+                        </div>
+                        <div class="head d-flex justify-content-start align-items-center mb-3">
+                            <div class="img-cont me-3">
+                                <img src="images/corsair_case.png" alt="">
+                            </div>
+                            <h4><a href="#">Corsair iCUE 4000D Mid-Tower Számítógépház ATX méret</a></h4>
+                        </div>
+                        <div class="body d-flex align-items-center justify-content-between mb-3">
+                            <div class="info-block">
+                                <p class="label">Ár:</p>
+                                <p class="value">399 999 Ft</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="label">Értékesítő:</p>
+                                <img src="images/amazon.png" alt="" class="icon">
+                            </div>
+                            <a href="#">Vásárlás külön</a>
+                        </div>
+                        <div class="options d-flex justify-content-between pb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                                Konfigurálás</button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                                Eltávolítás</button>
+                        </div>
+                    </article>
+                    <article class="cpu-cooler mb-3">
+                        <div class="d-flex justify-content-between brand">
+                            <h3 class="mb-3">Tápegység</h3>
+                            <img src="images/be_quiet.png" alt="" class="icon">
+                        </div>
+                        <div class="head d-flex justify-content-start align-items-center mb-3">
+                            <div class="img-cont me-3">
+                                <img src="images/be_quiet_power_supply.png" alt="">
+                            </div>
+                            <h4><a href="#">Pure Power 12M 850 W ATX 3.0, 80 Plus Gold</a></h4>
+                        </div>
+                        <div class="body d-flex align-items-center justify-content-between mb-3">
+                            <div class="info-block">
+                                <p class="label">Ár:</p>
+                                <p class="value">399 999 Ft</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="label">Értékesítő:</p>
+                                <img src="images/amazon.png" alt="" class="icon">
+                            </div>
+                            <a href="#">Vásárlás külön</a>
+                        </div>
+                        <div class="options d-flex justify-content-between pb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-gear"></i>
+                                Konfigurálás</button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i>
+                                Eltávolítás</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/product_page.js"></script>
+    <script src="js/progress_bar.js"></script>
+</body>
+
+</html>

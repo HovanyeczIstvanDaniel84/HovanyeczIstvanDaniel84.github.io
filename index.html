@@ -7,11 +7,12 @@
     <title>Boolean gépszerelés&reg;</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
     <div class="container-fluid main-cont">
-        <header>
+        <header class="fixed-top">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
@@ -32,10 +33,94 @@
                             </form>
                             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3my-auto">
                                 <li class="nav-item text">
-                                    <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
+                                    <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
                                 </li>
-                                <li class="nav-item text">
-                                    <a class="nav-link" href="#">Webshop</a>
+                                <li class="nav-item text dropdown w-lg-auto dropdown-fullwidth">
+                                    <a class="nav-link dropdown-toggle" href="webshop.html" data-bs-toggle="dropdown"
+                                        aria-expanded="false" role="button">Webshop</a>
+                                    <div class="dropdown-menu">
+                                        <div class="container d-flex menu">
+                                            <div class="categories d-flex justify-content-center flex-wrap">
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_cpu.png" alt="">
+                                                    </div>
+                                                    <h4>Processzorok</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_motherboard.png" alt="">
+                                                    </div>
+                                                    <h4>Alaplapok</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_gpu.png" alt="">
+                                                    </div>
+                                                    <h4>Videókártyák</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_memory.png" alt="">
+                                                    </div>
+                                                    <h4>Memóriák</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_storage.png" alt="">
+                                                    </div>
+                                                    <h4>Háttértárak</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_power_supply.png" alt="">
+                                                    </div>
+                                                    <h4>Tápegységek</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_cooler.png" alt="">
+                                                    </div>
+                                                    <h4>Processzor hűtők</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images//category_case.png" alt="">
+                                                    </div>
+                                                    <h4>Gépházak</h4>
+                                                </a>
+                                            </div>
+                                            <div class="other-col">
+                                                <h3>Számítógépek</h3>
+                                                <ul>
+                                                    <li><a href="webshop.html">Irodai</a></li>
+                                                    <li><a href="webshop.html">Munkaállomás</a></li>
+                                                    <li><a href="webshop.html">Játék</a></li>
+                                                    <li><a href="webshop.html">Kiszolgáló</a></li>
+                                                </ul>
+                                                <h3>Perifériák</h3>
+                                                <ul>
+                                                    <li><a href="webshop.html">Egerek</a></li>
+                                                    <li><a href="webshop.html">Billenytűzetek</a></li>
+                                                    <li><a href="webshop.html">Monitorok</a></li>
+                                                    <li><a href="webshop.html">Hangfalak</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-alternate">
+                                            <ul>
+                                                <li><a href="webshop.html">Processzorok</a></li>
+                                                <li><a href="webshop.html">Alaplapok</a></li>
+                                                <li><a href="webshop.html">Videókártyák</a></li>
+                                                <li><a href="webshop.html">Memóriák</a></li>
+                                                <li><a href="webshop.html">Háttértárak</a></li>
+                                                <li><a href="webshop.html">Tápegységek</a></li>
+                                                <li><a href="webshop.html">Processzor hűtők</a></li>
+                                                <li><a href="webshop.html">Gépházak</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
                                 </li>
                                 <li class="nav-item text">
                                     <a class="nav-link" href="#">Rólunk</a>
@@ -99,7 +184,6 @@
                     <button class="btn btn-light landing-page-next show-more" type="button">Tovább<i
                             class="bi bi-arrow-right"></i></button>
                     <p class="mt-auto text-center">Több mint 100 000 megrendelés</p>
-
                 </div>
             </section>
             <section class="about">
@@ -247,7 +331,6 @@
                                     <img src="images/logo.png" alt="" class="logo m-0">
                                 </div>
                             </article>
-
                         </div>
                     </div>
                 </div>
@@ -257,7 +340,7 @@
                 <div class="sep">
                     <div></div>
                 </div>
-                <h2 class="mt-3 mb-5">Előnyeink</h2>
+                <h2 class="mb-5">Előnyeink</h2>
                 <div class="row mt-4 text-center">
                     <div class="col-xl-4 box">
                         <img src="images/warranty.png" alt="" class="advantages-icon">
@@ -304,51 +387,51 @@
                 <div class="sep">
                     <div></div>
                 </div>
-                <h2 class="mt-3">Szolgáltatásaink</h2>
-                <div class="d-flex justify-content-center flex-wrap">
-                    <article class="d-flex align-items-center">
+                <h2>Szolgáltatásaink</h2>
+                <div class="d-flex justify-content-center flex-wrap article-cont">
+                    <article class="d-flex align-items-center flex-column">
                         <img src="images/interface.png" alt="" class="icon">
-                        <div class="text-cont d-flex flex-column">
-                            <h3>Gépösszeszerelés</h3>
+                        <div class="text-cont d-flex flex-column mt-3">
+                            <h3 class="mb-3">Gépösszeszerelés</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat animi
                                 perferendis!</p>
-                            <button class="btn btn-outline-dark" type="button">Tovább</button>
+                            <a href="#" class="outline-bottom p-1 mx-auto d-block">Tovább</a>
                         </div>
                     </article>
-                    <article class="d-flex align-items-center">
+                    <article class="d-flex align-items-center flex-column">
                         <img src="images/shopping-bag.png" alt="" class="icon">
-                        <div class="text-cont d-flex flex-column">
-                            <h3>Alkatrész Webshop</h3>
+                        <div class="text-cont d-flex flex-column mt-3">
+                            <h3 class="mb-3">Alkatrész Webshop</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat animi
                                 perferendis!</p>
-                            <button class="btn btn-outline-dark" type="button">Tovább</button>
+                            <a href="#" class="outline-bottom p-1 mx-auto d-block">Tovább</a>
                         </div>
                     </article>
-                    <article class="d-flex align-items-center">
+                    <article class="d-flex align-items-center flex-column">
                         <img src="images/performance.png" alt="" class="icon">
-                        <div class="text-cont d-flex flex-column">
-                            <h3>Számítógép optimalizáció</h3>
+                        <div class="text-cont d-flex flex-column mt-3">
+                            <h3 class="mb-3">Számítógép optimalizáció</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat animi
                                 perferendis!</p>
-                            <button class="btn btn-outline-dark" type="button">Tovább</button>
+                            <a href="#" class="outline-bottom p-1 mx-auto d-block">Tovább</a>
                         </div>
                     </article>
-                    <article class="d-flex align-items-center">
+                    <article class="d-flex align-items-center flex-column">
                         <img src="images/clean.png" alt="" class="icon">
-                        <div class="text-cont d-flex flex-column">
-                            <h3>Géptisztítás</h3>
+                        <div class="text-cont d-flex flex-column mt-3">
+                            <h3 class="mb-3">Géptisztítás</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat animi
                                 perferendis!</p>
-                            <button class="btn btn-outline-dark" type="button">Tovább</button>
+                            <a href="#" class="outline-bottom p-1 mx-auto d-block">Tovább</a>
                         </div>
                     </article>
                 </div>
             </section>
-            <section class="blogs p-3 mt-5">
+            <section class="blogs p-5 mt-5">
                 <div class="sep">
                     <div></div>
                 </div>
-                <h2 class="mt-3 mb-5">Blogok</h2>
+                <h2 class="mb-5">Blogok</h2>
                 <div class="article-cont">
                     <article>
                         <div class="img-cont">
@@ -365,7 +448,7 @@
                             <h3>Gépszerelés lépései</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore a neque
                                 debitis repudiandae veritatis fuga.</p>
-                            <button class="btn btn-outline-dark ms-auto d-block" type="button">Tovább</button>
+                            <a class="btn btn-outline-dark ms-auto d-block" type="button" href="blog.html">Tovább</a>
                         </div>
                     </article>
                     <article>
@@ -383,7 +466,7 @@
                             <h3>Videókártyák 2024-ben</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore a neque
                                 debitis repudiandae veritatis fuga.</p>
-                            <button class="btn btn-outline-dark ms-auto d-block" type="button">Tovább</button>
+                            <a class="btn btn-outline-dark ms-auto d-block" type="button" href="blog.html">Tovább</a>
                         </div>
                     </article>
                     <article>
@@ -401,7 +484,7 @@
                             <h3>Antisztatikus védelem</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore a neque
                                 debitis repudiandae veritatis fuga.</p>
-                            <button class="btn btn-outline-dark ms-auto d-block" type="button">Tovább</button>
+                            <a class="btn btn-outline-dark ms-auto d-block" type="button" href="blog.html">Tovább</a>
                         </div>
                     </article>
                     <article>
@@ -419,7 +502,7 @@
                             <h3>Mennyi hűtőpaszta elég</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore a neque
                                 debitis repudiandae veritatis fuga.</p>
-                            <button class="btn btn-outline-dark ms-auto d-block" type="button">Tovább</button>
+                            <a class="btn btn-outline-dark ms-auto d-block" type="button" href="blog.html">Tovább</a>
                         </div>
                     </article>
                 </div>
@@ -552,9 +635,9 @@
                             <div class="footer-newsletter">
                                 <p>Legyen Ön az első, aki értesül az újdonságokról, akciókról és promóciókról!</p>
                                 <form action="#">
-                                    <input type="text" placeholder="Add meg az E-mailed">
+                                    <input type="text" placeholder="Add meg az E-mailed" id="newsletter" value="">
                                 </form>
-                                <button type="submit" class="blue-button mt-3">Feliratkozás</button>
+                                <button type="button" class="blue-button mt-3">Feliratkozás</button>
                             </div>
                         </div>
                     </div>
@@ -574,40 +657,6 @@
             </div>
         </footer>
 
-        <!-- Message űrlap visszajelző modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="exampleModalLabel">Köszönjük bizalmát!</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Üzenetét rögzítettük! Hamarosan keresni fogjuk.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezár</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <!-- Negatív visszajelző modal, ha a user másodjára próbálja kitölteni az űrlapot -->
-        <div class="modal fade" id="negativeFeedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="exampleModalLabel">Sikertelen művelet</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Ezt az űrlapot már kitöltötte, legközelebb 24 óra múlva tudja majd ismét kitölteni.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezár</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/form-validation.js"></script>

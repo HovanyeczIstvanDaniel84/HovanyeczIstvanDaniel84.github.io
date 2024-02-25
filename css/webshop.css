@@ -1,0 +1,465 @@
+.webshop-text {
+    width: 1200px;
+    padding: 70px;
+}
+
+.promote-other {
+    background-color: #bbbbbb;
+}
+
+.pcbox {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    /* border-radius: 10px; */
+    position: relative;
+    background-color: #fff;
+}
+
+.pcbox-body {
+    width: 300px;
+    height: auto;
+}
+
+.pcbox .newprice {
+    color: #c70000;
+}
+
+.pcbox .saleprice {
+    bottom: 55px;
+    left: 27px;
+    font-size: 20px;
+}
+
+.pcbox .price,
+.pcbox .newprice {
+    bottom: 28px;
+    left: 25px;
+    font-size: 25px;
+}
+
+.pcbox .price,
+.pcbox .saleprice,
+.pcbox .newprice {
+    position: absolute;
+    margin: 0;
+}
+
+.pcbox-img {
+    padding: 20px;
+    width: 100%;
+}
+
+.pcbox img {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.pcbox-img .rear {
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    z-index: -1;
+    transition: opacity 0.4s ease-out;
+}
+
+.pcbox-img:hover .rear {
+    opacity: 1;
+    z-index: 0;
+}
+
+.pcbox-text {
+    text-align: center;
+}
+
+.pcbox .cart {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    border: 1px solid #ccc /* #000*/;
+    padding: 5px;
+    background-color: #ffffff;
+    /* border-radius: 5px; */
+}
+
+.pcbox .cart:hover {
+    background-color: #2b2b2b /* #000*/;
+    transition: 0.3s;
+}
+
+.pcbox .icon-cart {
+    color: #2b2b2b;
+}
+
+.pcbox .cart:hover .icon-cart{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.pcbox .heart {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 30px !important;
+}
+
+.pcbox .icon-heart {
+    color: #c70000;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.pcbox .icon-heart:hover {
+    opacity: 1
+}
+
+.pcbox .sale,
+.pcbox .new {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 30px !important;
+}
+
+.pcbox .icon-sale {
+    color: #0026ff;
+}
+
+.pcbox .new {
+    color: #007706;
+}
+
+.pcbox-title {
+    color: #2b2b2b /* #000*/;
+    font-size: 25px;
+}
+
+.pcbox-title:hover {
+    color: #6b6b6b;
+}
+
+.pcbox-stars {
+    position: absolute;
+    bottom: 36px;
+    right: 90px;
+}
+
+.outstanding {
+    background-color: #aaaaaa4d;
+}
+
+.webshopsep {
+    width: 90%;
+    background-color: #2b2b2b;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-cont-short {
+    width: 90%;
+}
+
+.workerbox-left,
+.workerbox-middle,
+.workerbox-right {
+    width: 500px;
+    height: 600px;
+    border: 3px solid #2b2b2b;
+    background-color: #fff;
+}
+
+.workerbox-left {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.workerbox-right {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.workerbox-img {
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workerbox-title {
+    color: #2b2b2b;
+    font-size: 35px;
+    border-bottom: 2px solid #2b2b2b;
+}
+
+.workerbox-contact {
+    color: #2b2b2b;
+    font-size: 20px;
+    border: 1px solid #2b2b2b;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.mainnav {
+    padding: 10px;
+    width: 94%;
+}
+
+.filters {
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.filters h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.filters h3 {
+    font-size: 20px;
+}
+
+.pcbox a {
+    white-space: wrap;
+}
+
+.filters p {
+    font-weight: 500;
+}
+
+.filters a {
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+    padding: 10px;
+}
+
+.filters a, .card {
+    border: 0px !important;
+}
+.filter-carousel {
+    width: 85%;
+    box-shadow: 10px 10px 5px #2b2b2b81;
+}
+.half{
+    background: -webkit-linear-gradient(top, #fff, #fff 20%, #aaaaaa4d 50%, #aaaaaa4d);
+}
+.grey{
+    background-color: #aaaaaa4d;
+}
+.carousel-item img {
+    width: auto;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+.range_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.sliders_control {
+    position: relative;
+    min-height: 50px;
+}
+.form_control {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #635a5a;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+    background: #f7f7f7;
+}
+input[type=range]::-webkit-slider-thumb:active {
+    box-shadow: inset 0 0 3px #07ebba, 0 0 9px #07ebba;
+    -webkit-box-shadow: inset 0 0 3px #07ebba, 0 0 9px #07ebba;
+}
+input[type="number"] {
+    color: #8a8383;
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #2b2b2b;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #C6C6C6;
+    pointer-events: none;
+}
+#fromSlider {
+    height: 0;
+    z-index: 1;
+}
+/*https://medium.com/@predragdavidovic10/native-dual-range-slider-html-css-javascript-91e778134816*/
+
+@media only screen and (max-width: 600px) {
+    .pcbox-title {
+        font-size: 20px;
+    }
+
+    .pcbox .price {
+        bottom: 33px;
+        font-size: 20px;
+    }
+
+    .pcbox-img .rear {
+        display: none;
+    }
+    .workerbox-img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1320px) and (max-width: 1621px) {
+    .workerbox-img {
+        width: 350px;
+    }
+
+    .workerbox-left,
+    .workerbox-middle,
+    .workerbox-right {
+        width: 400px;
+        height: 500px;
+    }
+
+    .workerbox-title {
+        font-size: 30px;
+    }
+
+    .workerbox-contact {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 888px) and (max-width: 1319px) {
+    .workerbox-img {
+        width: 350px;
+    }
+
+    .workerbox-left,
+    .workerbox-middle,
+    .workerbox-right {
+        width: 400px;
+        height: 500px;
+    }
+
+    .workerbox-title {
+        font-size: 30px;
+    }
+
+    .workerbox-contact {
+        font-size: 17px;
+    }
+
+    .workerbox-left {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .workerbox-middle {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .workerbox-right {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 887px) {
+    .workerbox-img {
+        width: 350px;
+    }
+
+    .workerbox-left,
+    .workerbox-middle,
+    .workerbox-right {
+        width: 400px;
+        height: 500px;
+    }
+
+    .workerbox-title {
+        font-size: 30px;
+    }
+
+    .workerbox-contact {
+        font-size: 17px;
+    }
+
+    .workerbox-left {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .workerbox-right {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    .carousel-item img {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .pcbox strong {
+        font-size: 16px;
+    }
+    .pcbox p {
+        font-size: 14px;
+    }
+    .pcbox img{
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 200px;
+        
+    }
+}
