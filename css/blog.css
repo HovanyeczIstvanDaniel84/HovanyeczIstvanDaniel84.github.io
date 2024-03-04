@@ -1,0 +1,262 @@
+aside {
+    width: 20%;
+    background-color: transparent;
+    top: 75px;
+    position: relative;
+}
+
+main {
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.toggle-menu {
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+.toggle-menu i {
+    font-size: 20px;
+}
+
+aside:first-child .cont {
+    position: fixed;
+    padding: 30px;
+}
+
+.content-table a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+}
+
+.content-table a.active {
+    color: #2b2b2b;
+    font-weight: 600;
+    background-color: #cccccc54;
+}
+
+.content-table a:hover {
+    background-color: #cccccc54;
+    color: #2b2b2b;
+}
+
+aside h2 {
+    font-size: 20px;
+}
+
+main {
+    width: 60%;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.blogs article {
+    width: 47% !important;
+    margin: 10px 10px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.blog-head ul {
+    list-style-type: disc !important;
+}
+
+.blog-footer {
+    background-color: #cccccc21;
+}
+
+.haul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #cccccc31;
+}
+
+.related a {
+    color: #0fb4dd;
+    font-size: 14px;
+}
+
+.post-info span {
+    color: #2b2b2b;
+}
+
+.related li {
+    margin: 20px 0px;
+}
+
+.related a:hover {
+    color: #0a92b4;
+}
+
+.haul .img-cont {
+    height: 100%;
+
+}
+
+.haul img {
+    height: 100%;
+}
+
+.haul.reverse {
+    flex-direction: row-reverse;
+}
+
+.haul .text-cont {
+    width: 100%;
+    padding: 20px;
+}
+
+.haul .text-cont p {
+    margin: 0px;
+}
+
+h2.anchor {
+    padding-top: 90px;
+    margin-top: -90px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: transparent;
+    height: 5px;
+    display: block;
+    top: 56px;
+}
+.progress-bar {
+    background: rgb(0,176,255);
+    background: radial-gradient(circle, rgba(0,176,255,1) 0%, rgba(0,251,247,1) 35%, rgba(0,254,247,1) 66%, rgba(0,255,213,1) 100%);
+    width: 0%;
+    display: block;
+    height: inherit;
+}
+
+#advertise .ad .content {
+    padding: 20px;
+    border-top: 2px solid #059c90;
+}
+#advertise {
+    padding: 15px;
+    background-color: #cccccc1a;
+}
+#advertise .ad {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#advertise h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#advertise .ad h3 {
+    text-align: center;
+    background-color: #059c90;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+.post-info i {
+    font-size: 30px !important;
+    margin-right: 5px;
+}
+
+.post-info ul li {
+    margin: auto 10px;
+}
+
+.post-info a, .post-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.imgs .img-cont {
+    width: 48%;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* .haul .img-cont img, .figure .img-cont img, .imgs .img-cont img*/ main .img-cont:not(.blog-img) img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media only screen and (max-width: 1550px) {
+    aside {
+        display: none;
+    }
+    .toggle-menu {
+        display: block;
+    }
+    main {
+        width: 100%;
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .haul {
+        flex-wrap: wrap;
+        flex-direction: column-reverse !important;
+    }
+}
+
+@media only screen and (max-width: 951px) {
+    .blogs article {
+        width: 100% !important;
+    }
+    iframe {
+        width: 480px !important;
+        height: 270px !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    .post-info span {
+        display: none;
+    }
+    ul.listing {
+        margin-left: 0px !important;
+    }
+    iframe {
+        width: 320px !important;
+        height: 180px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    iframe {
+        width: 240px !important;
+        height: 135px !important;
+    }
+}

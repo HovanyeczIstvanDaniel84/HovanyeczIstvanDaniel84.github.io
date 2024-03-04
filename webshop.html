@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean gépszerelés&reg;</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/webshop.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <div class="main-cont container-fluid">
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="offcanvas-title" id="offcanvasNavbarLabel" href="index.html">
+                                <img src="images/logo.png" alt="" class="logo show-swap">
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="d-flex" role="search">
+                                <input class="form-control" type="search" placeholder="Keresés" aria-label="Keresés">
+                                <button class="btn" type="button" onclick="localStorage.clear()"><img src="images/search.png" alt=""
+                                        class="icon"></button>
+                            </form>
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3my-auto">
+                                <li class="nav-item text">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+                                </li>
+                                <li class="nav-item text dropdown w-lg-auto dropdown-fullwidth">
+                                    <a class="nav-link dropdown-toggle" href="webshop.html" data-bs-toggle="dropdown"
+                                        aria-expanded="false" role="button">Webshop</a>
+                                    <div class="dropdown-menu">
+                                        <div class="container d-flex menu">
+                                            <div class="categories d-flex justify-content-center flex-wrap">
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_cpu.png" alt="">
+                                                    </div>
+                                                    <h4>Processzorok</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_motherboard.png" alt="">
+                                                    </div>
+                                                    <h4>Alaplapok</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_gpu.png" alt="">
+                                                    </div>
+                                                    <h4>Videókártyák</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_memory.png" alt="">
+                                                    </div>
+                                                    <h4>Memóriák</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_storage.png" alt="">
+                                                    </div>
+                                                    <h4>Háttértárak</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_power_supply.png" alt="">
+                                                    </div>
+                                                    <h4>Tápegységek</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images/category_cooler.png" alt="">
+                                                    </div>
+                                                    <h4>Processzor hűtők</h4>
+                                                </a>
+                                                <a class="opt" href="webshop.html">
+                                                    <div class="img-cont">
+                                                        <img src="images//category_case.png" alt="">
+                                                    </div>
+                                                    <h4>Gépházak</h4>
+                                                </a>
+                                            </div>
+                                            <div class="other-col">
+                                                <h3>Számítógépek</h3>
+                                                <ul>
+                                                    <li><a href="webshop.html">Irodai</a></li>
+                                                    <li><a href="webshop.html">Munkaállomás</a></li>
+                                                    <li><a href="webshop.html">Játék</a></li>
+                                                    <li><a href="webshop.html">Kiszolgáló</a></li>
+                                                </ul>
+                                                <h3>Perifériák</h3>
+                                                <ul>
+                                                    <li><a href="webshop.html">Egerek</a></li>
+                                                    <li><a href="webshop.html">Billenytűzetek</a></li>
+                                                    <li><a href="webshop.html">Monitorok</a></li>
+                                                    <li><a href="webshop.html">Hangfalak</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-alternate">
+                                            <ul>
+                                                <li><a href="webshop.html">Processzorok</a></li>
+                                                <li><a href="webshop.html">Alaplapok</a></li>
+                                                <li><a href="webshop.html">Videókártyák</a></li>
+                                                <li><a href="webshop.html">Memóriák</a></li>
+                                                <li><a href="webshop.html">Háttértárak</a></li>
+                                                <li><a href="webshop.html">Tápegységek</a></li>
+                                                <li><a href="webshop.html">Processzor hűtők</a></li>
+                                                <li><a href="webshop.html">Gépházak</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item text">
+                                    <a class="nav-link" href="#">Rólunk</a>
+                                </li>
+                                <li class="nav-item text">
+                                    <a class="nav-link" href="#">Kontakt</a>
+                                </li>
+                                <li class="nav-item me-2 button-group d-none">
+                                    <div class="button-visible">
+                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#login">Bejelentkezés</button>
+                                        <button class="btn btn-dark" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#register">Regisztráció</button>
+                                    </div>
+                                </li>
+                                <li class="nav-item me-2 d-none">
+                                    <div class="accountoverview">
+                                        <p>Bejelentkezve, mint:</p>
+                                        <span class="accountname"></span>
+                                        <button type="button" class="btn btn-danger exitbutton">Kijelentkezés</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="interface d-flex my-auto justify-content-end">
+                        <li>
+                            <a href="checkout.html"><img src="images/shopping-cart.png" alt="Kosár" title="Kosár" class="icon">
+                                <sup>
+                                    <span class="d-none translate-middle badge rounded-pill bg-danger" id="cart-count">
+
+                                    </span>
+                                </sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/heart.png" alt="Kívánságlista" title="Kívánságlista"
+                                    class="icon"></a>
+                        </li>
+                        <li class="d-none">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/user.png" alt="Fiókom" title="Fiókom" class="icon">
+                                </a>
+                                <ul class="dropdown-menu dropdown-account">
+                                    <li>
+                                        <div class="button-visible">
+                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#login">Bejelentkezés</button>
+                                            <button class="btn btn-dark" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#register">Regisztráció</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accountoverview">
+                                            <p>Bejelentkezve, mint:</p>
+                                            <span class="accountname">ABCDEFABCDEF</span>
+                                            <button type="button"
+                                                class="btn btn-danger exitbutton">Kijelentkezés</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="button-group d-flex">
+                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="modal"
+                            data-bs-target="#login">Bejelentkezés</button>
+                        <button class="btn btn-dark" type="button" data-bs-toggle="modal"
+                            data-bs-target="#register">Regisztráció</button>
+                    </div>
+                    <div class="d-flex">
+                        <div class="dropdown accountlogin">
+                            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/user.png" alt="Fiókom" title="Fiókom" class="icon">
+                            </a>
+                            <ul class="dropdown-menu dropdown-account">
+                                <li>
+                                    <div class="accountoverview">
+                                        <p>Bejelentkezve, mint:</p>
+                                        <span class="accountname"></span>
+                                        <button type="button" class="btn btn-danger exitbutton">Kijelentkezés</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <aside class="filters">
+                <div class="cont">
+                    <h2>Szűrők</h2>
+                    <p class="flex gap-1">
+                        Videókártya típusa
+                        <a data-bs-toggle="collapse" href="#collapseVideokartya" role="button" aria-expanded="false"
+                            aria-controls="collapseVideokartya">
+                            <i class="bi bi-plus-lg"></i>
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseVideokartya">
+                        <div class="card card-body mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="NVIDIA" id="flexCheckNVIDIA0">
+                                <label class="form-check-label" for="flexCheckNVIDIA">
+                                    NVIDIA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="AMD" id="flexCheckAMDVid0">
+                                <label class="form-check-label" for="flexCheckAMDVid">
+                                    AMD
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="gap-1">
+                        Processzor típusa
+                        <a data-bs-toggle="collapse" href="#collapseProcesszor" role="button" aria-expanded="false"
+                            aria-controls="collapseProcesszor">
+                            <i class="bi bi-plus-lg"></i>
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseProcesszor">
+                        <div class="card card-body mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Intel" id="flexCheckIntel0">
+                                <label class="form-check-label" for="flexCheckIntel">
+                                    Intel
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="AMD" id="flexCheckAMDProc0">
+                                <label class="form-check-label" for="flexCheckAMDProc">
+                                    AMD
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="gap-1">
+                        Alaplap típusa
+                        <a data-bs-toggle="collapse" href="#collapseAlaplap" role="button" aria-expanded="false"
+                            aria-controls="collapseAlaplap0">
+                            <i class="bi bi-plus-lg"></i>
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseAlaplap">
+                        <div class="card card-body mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckAsusB7600">
+                                <label class="form-check-label" for="flexCheckAsusB760">
+                                    Asus B760
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckASRockB4500">
+                                <label class="form-check-label" for="flexCheckASRockB450">
+                                    ASRock B450
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckGIGABYTEH610M0">
+                                <label class="form-check-label" for="flexCheckGIGABYTEH610M">
+                                    GIGABYTE H610M
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gap-1">
+                        Ár szerinti rendezés
+                        <a data-bs-toggle="collapse" href="#collapseAr" role="button" aria-expanded="false"
+                            aria-controls="collapseAr">
+                            <i class="bi bi-plus-lg"></i>
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseAr">
+                        <div class="card card-body mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Filters" id="radioArNovekvo0">
+                                <label class="form-check-label" for="radioArNovekvo">
+                                    Ár szerint növekvő
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Filters" id="radioArCsokkeno0">
+                                <label class="form-check-label" for="radioArCsokkeno">
+                                    Ár szerint csökkenő
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gap-1">
+                        Jelzések alapján
+                        <a data-bs-toggle="collapse" href="#collapseJelzesek" role="button" aria-expanded="false"
+                            aria-controls="collapseJelzesek">
+                            <i class="bi bi-plus-lg"></i>
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseJelzesek">
+                        <div class="card card-body mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Filters" id="radioJelzesJo0">
+                                <label class="form-check-label" for="radioJelzesJo">
+                                    Jó elől
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Filters" id="radioJelzesRossz0">
+                                <label class="form-check-label" for="radioJelzesRossz">
+                                    Rossz elől
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="range-container">
+                        <a class="mb-3 text-center">Árhatárok megadása</a>
+                        <div class="sliders_control">
+                            <input id="fromSlider0" type="range" value="0" min="0" max="1000000">
+                            <input id="toSlider0" type="range" value="1000000" min="0" max="1000000">
+                        </div>
+                        <div class="form_control">
+                            <div class="form_control_container">
+                                <div class="form_control_container__time">Kezdőár</div>
+                                <input class="form_control_container__time__input" type="number" id="fromInput0"
+                                    value="0" min="0" max="1000000" readonly>
+                            </div>
+                            <div class="form_control_container">
+                                <div class="form_control_container__time">Végár</div>
+                                <input class="form_control_container__time__input" type="number" id="toInput0"
+                                    value="1000000" min="0" max="1000000" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="applyFilters()">Szűrők alkalmazása</button>
+                </div>
+            </aside>
+            <div class="main-content">
+                <div class="container-fluid">
+                    <section class="mainnav">
+                        <ul class="interface d-flex my-auto justify-content-end">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-hdd-fill icon" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M.91 7.204A3 3 0 0 1 2 7h12c.384 0 .752.072 1.09.204l-1.867-3.422A1.5 1.5 0 0 0 11.906 3H4.094a1.5 1.5 0 0 0-1.317.782z" />
+                                    </svg>
+                                    Szerverek
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-broadcast-pin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                    </svg>
+                                    Újdonságok
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                        <path
+                                            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                        <path
+                                            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                    </svg>
+                                    Akció
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-info-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path
+                                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                                    </svg>
+                                    Információk
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="half">
+                    <div class="flex-row-reverse row filter-carousel m-auto">
+                        <section class="col-xxl-12 p-0">
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/webshop-promote.jpg" class="d-block" alt="Akciós számítógép">
+                                        <div class="hover-text">
+                                            <h1>Garanciás számítógépek, jó áron</h1>
+                                            <p>Válasszon bő kínálatunkból. Akármilyen gépet szeretne, nálunk megtalálja!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/webshop-promote2.webp" class="d-block" alt="Gyors számítógép">
+                                        <div class="hover-text">
+                                            <h1>Olcsó szállítás</h1>
+                                            <p>Kérje termékét egyéni címre, mindössze 5999 Ft-ért!</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/webshop-promote3.webp" class="d-block" alt="Új számítógép">
+                                        <div class="hover-text">
+                                            <h1>Bővített garancia</h1>
+                                            <p>Extra 3 év garancia, mindössze 9999 Ft-ért.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+                <section class="outstanding p-5">
+                    <div class="sep">
+                        <div></div>
+                    </div>
+                    <h1 class="mt-3 mb-5"><strong>Kiemelkedő számítógépek</strong></h1>
+                    <div class="row mt-4 justify-content-center outstanding-pcs">
+
+                    </div>
+                </section>
+                <div class="container-fluid">
+                    <section class="pcs p-5">
+                        <h2 class="d-none" id="filter-result"></h2>
+                        <div class="row mt-4 justify-content-center main-pc-container">
+
+                        </div>
+                    </section>
+                </div>
+                <section class="promote d-flex align-items-center flex-column p-5 text-white">
+                    <h2 class="mb-5 text-center">Miért érdemes előre összerakott gépet vásárolni?</h2>
+                    <div class="text-cont">
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
+                            dolor,
+                            sit
+                            amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Lorem
+                            ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
+                            dolor,
+                            sit
+                            amet consectetur adipisicing elit. </p>
+                    </div>
+                </section>
+                <div class="container-fluid">
+                    <section class="pcs p-5">
+                        <div class="row mt-4 justify-content-center">
+                            <article class="pcbox m-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="pcbox-img">
+                                    <img src="images/product1_front.png" class="front" alt="Boolean Rogue Gaming PC">
+                                    <img src="images/product1_rear.png" class="rear" alt="Boolean Rogue Gaming PC">
+                                </div>
+                                <div class="pcbox-text">
+                                    <a href="#" class="pcbox-title"><strong>Boolean Rogue Gaming PC</strong></a>
+                                    <p>Nvidia Asus Rog Strix 3080 12 Gb Videókártya, Intel core i5 13400F Processzor
+                                        (4.60
+                                        GHz),
+                                        Asus B760 FCLGA1700 Alaplap</p>
+                                </div>
+                                <div class="heart" data-toggle="tooltip" data-placement="bottom"
+                                    title="Kívánságlistához adás">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-heart" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="sale" data-toggle="tooltip" data-placement="bottom" title="Akciós">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-sale" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="new d-none" data-toggle="tooltip" data-placement="bottom" title="Újdonság">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-new" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a class="cart" data-toggle="tooltip" data-placement="bottom" title="Kosárba"
+                                    href="product_page.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="icon-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                                <div class="pcbox-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <p class="saleprice"><s>799 999 Ft</s></p>
+                                <p class="newprice"><strong>639 999 Ft</strong></p>
+                            </article>
+                            <article class="pcbox m-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="pcbox-img">
+                                    <img src="images/product2_front.png" class="front" alt="Boolean Turbo Gaming PC">
+                                    <img src="images/product2_rear.png" class="rear" alt="Boolean Turbo Gaming PC">
+                                </div>
+                                <div class="pcbox-text">
+                                    <a href="#" class="pcbox-title"><strong>Boolean Turbo Gaming PC</strong></a>
+                                    <p>RX 7700 XT Gaming OC 12G 12GB GDDR6 videokártya, AMD Ryzen 5 5600X processzor,
+                                        ASRock
+                                        B450 Pro4 R2.0 alaplap</p>
+                                </div>
+                                <div class="heart" data-toggle="tooltip" data-placement="bottom"
+                                    title="Kívánságlistához adás">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-heart" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="sale d-none" data-toggle="tooltip" data-placement="bottom" title="Akciós">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-sale" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="new d-none" data-toggle="tooltip" data-placement="bottom" title="Újdonság">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-new" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a class="cart" data-toggle="tooltip" data-placement="bottom" title="Kosárba"
+                                    href="product_page.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="icon-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                                <div class="pcbox-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-half" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                </div>
+                                <p class="price"><strong>600 000 Ft</strong></p>
+                            </article>
+                            <article class="pcbox m-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="pcbox-img">
+                                    <img src="images/product3_front.png" class="front" alt="Boolean Rogue Gaming PC">
+                                    <img src="images/product3_rear.png" class="rear" alt="Boolean Rogue Gaming PC">
+                                </div>
+                                <div class="pcbox-text">
+                                    <a href="#" class="pcbox-title"><strong>Boolean Godskin PC</strong></a>
+                                    <p>GIGABYTE RTX 4060 Windforce OC 8G 8GB GDDR6 videokártya, Intel Core i5-12400F
+                                        processzor,
+                                        GIGABYTE H610M K DDR4 alaplap</p>
+                                </div>
+                                <div class="heart" data-toggle="tooltip" data-placement="bottom"
+                                    title="Kívánságlistához adás">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-heart" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="sale d-none" data-toggle="tooltip" data-placement="bottom" title="Akciós">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-sale" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="new" data-toggle="tooltip" data-placement="bottom" title="Újdonság">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-new" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a class="cart" data-toggle="tooltip" data-placement="bottom" title="Kosárba"
+                                    href="product_page.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="icon-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                                <div class="pcbox-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                </div>
+                                <p class="price"><strong>725 000 Ft</strong></p>
+                            </article>
+                            <article class="pcbox m-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="pcbox-img">
+                                    <img src="images/product1_front.png" class="front" alt="Boolean Rogue Gaming PC">
+                                    <img src="images/product1_rear.png" class="rear" alt="Boolean Rogue Gaming PC">
+                                </div>
+                                <div class="pcbox-text">
+                                    <a href="#" class="pcbox-title"><strong>Boolean Rogue Gaming PC</strong></a>
+                                    <p>Nvidia Asus Rog Strix 3080 12 Gb Videókártya, Intel core i5 13400F Processzor
+                                        (4.60
+                                        GHz),
+                                        Asus B760 FCLGA1700 Alaplap</p>
+                                </div>
+                                <div class="heart" data-toggle="tooltip" data-placement="bottom"
+                                    title="Kívánságlistához adás">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-heart" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="sale" data-toggle="tooltip" data-placement="bottom" title="Akciós">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-sale" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="new d-none" data-toggle="tooltip" data-placement="bottom" title="Újdonság">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-new" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a class="cart" data-toggle="tooltip" data-placement="bottom" title="Kosárba"
+                                    href="product_page.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="icon-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                                <div class="pcbox-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <p class="saleprice"><s>799 999 Ft</s></p>
+                                <p class="newprice"><strong>639 999 Ft</strong></p>
+                            </article>
+                            <article class="pcbox m-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="pcbox-img">
+                                    <img src="images/product2_front.png" class="front" alt="Boolean Turbo Gaming PC">
+                                    <img src="images/product2_rear.png" class="rear" alt="Boolean Turbo Gaming PC">
+                                </div>
+                                <div class="pcbox-text">
+                                    <a href="#" class="pcbox-title"><strong>Boolean Turbo Gaming PC</strong></a>
+                                    <p>RX 7700 XT Gaming OC 12G 12GB GDDR6 videokártya, AMD Ryzen 5 5600X processzor,
+                                        ASRock
+                                        B450 Pro4 R2.0 alaplap</p>
+                                </div>
+                                <div class="heart" data-toggle="tooltip" data-placement="bottom"
+                                    title="Kívánságlistához adás">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-heart" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="sale d-none" data-toggle="tooltip" data-placement="bottom" title="Akciós">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-sale" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="new d-none" data-toggle="tooltip" data-placement="bottom" title="Újdonság">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-new" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a class="cart" data-toggle="tooltip" data-placement="bottom" title="Kosárba"
+                                    href="product_page.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="icon-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                                <div class="pcbox-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-half" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                </div>
+                                <p class="price"><strong>600 000 Ft</strong></p>
+                            </article>
+                            <article class="pcbox m-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="pcbox-img">
+                                    <img src="images/product3_front.png" class="front" alt="Boolean Rogue Gaming PC">
+                                    <img src="images/product3_rear.png" class="rear" alt="Boolean Rogue Gaming PC">
+                                </div>
+                                <div class="pcbox-text">
+                                    <a href="#" class="pcbox-title"><strong>Boolean Godskin PC</strong></a>
+                                    <p>GIGABYTE RTX 4060 Windforce OC 8G 8GB GDDR6 videokártya, Intel Core i5-12400F
+                                        processzor,
+                                        GIGABYTE H610M K DDR4 alaplap</p>
+                                </div>
+                                <div class="heart" data-toggle="tooltip" data-placement="bottom"
+                                    title="Kívánságlistához adás">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-heart" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="sale d-none" data-toggle="tooltip" data-placement="bottom" title="Akciós">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-sale" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="new" data-toggle="tooltip" data-placement="bottom" title="Újdonság">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-new" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a class="cart" data-toggle="tooltip" data-placement="bottom" title="Kosárba"
+                                    href="product_page.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="icon-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                                <div class="pcbox-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                </div>
+                                <p class="price"><strong>725 000 Ft</strong></p>
+                            </article>
+                            <article class="pcbox m-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="pcbox-img">
+                                    <img src="images/product1_front.png" class="front" alt="Boolean Rogue Gaming PC">
+                                    <img src="images/product1_rear.png" class="rear" alt="Boolean Rogue Gaming PC">
+                                </div>
+                                <div class="pcbox-text">
+                                    <a href="#" class="pcbox-title"><strong>Boolean Rogue Gaming PC</strong></a>
+                                    <p>Nvidia Asus Rog Strix 3080 12 Gb Videókártya, Intel core i5 13400F Processzor
+                                        (4.60
+                                        GHz),
+                                        Asus B760 FCLGA1700 Alaplap</p>
+                                </div>
+                                <div class="heart" data-toggle="tooltip" data-placement="bottom"
+                                    title="Kívánságlistához adás">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-heart" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="sale" data-toggle="tooltip" data-placement="bottom" title="Akciós">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-sale" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="new d-none" data-toggle="tooltip" data-placement="bottom" title="Újdonság">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-new" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a class="cart" data-toggle="tooltip" data-placement="bottom" title="Kosárba"
+                                    href="product_page.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="icon-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                                <div class="pcbox-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <p class="saleprice"><s>799 999 Ft</s></p>
+                                <p class="newprice"><strong>639 999 Ft</strong></p>
+                            </article>
+                            <article class="pcbox m-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="pcbox-img">
+                                    <img src="images/product2_front.png" class="front" alt="Boolean Turbo Gaming PC">
+                                    <img src="images/product2_rear.png" class="rear" alt="Boolean Turbo Gaming PC">
+                                </div>
+                                <div class="pcbox-text">
+                                    <a href="#" class="pcbox-title"><strong>Boolean Turbo Gaming PC</strong></a>
+                                    <p>RX 7700 XT Gaming OC 12G 12GB GDDR6 videokártya, AMD Ryzen 5 5600X processzor,
+                                        ASRock
+                                        B450 Pro4 R2.0 alaplap</p>
+                                </div>
+                                <div class="heart" data-toggle="tooltip" data-placement="bottom"
+                                    title="Kívánságlistához adás">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-heart" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="sale d-none" data-toggle="tooltip" data-placement="bottom" title="Akciós">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-sale" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                                            <path
+                                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                                            <path
+                                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="new d-none" data-toggle="tooltip" data-placement="bottom" title="Újdonság">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="icon-new" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a class="cart" data-toggle="tooltip" data-placement="bottom" title="Kosárba"
+                                    href="product_page.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="icon-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                                <div class="pcbox-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-half" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                </div>
+                                <p class="price"><strong>600 000 Ft</strong></p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+        </main>
+        <section class="promote-other d-flex align-items-center flex-column p-5 mb-5 grey">
+            <h2 class="mb-3 text-center">Nem vagy megelégedve?</h2>
+            <div class="text-cont-short">
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
+                    dolor,
+                    sit
+                    amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
+                    dolor,
+                    sit
+                    amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="webshopsep mb-5 mt-5"></div>
+            <h2 class="mb-3 text-center">Elérte a számítógépedet az idő vasfoga?</h2>
+            <div class="text-cont-short">
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
+                    dolor,
+                    sit
+                    amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum
+                    dolor,
+                    sit
+                    amet consectetur adipisicing elit. </p>
+            </div>
+        </section>
+        <div class="container-fluid">
+            <section class="mb-5">
+                <div class="sep">
+                    <div></div>
+                </div>
+                <h2 class="mt-3 mb-5">Munkatársaink</h2>
+                <div class="workers row m-0 justify-content-center">
+                    <article class="workerbox-left m-3 col-xl-6 col-md-6 col-sm-12">
+                        <img src="images/worker.jpg" class="workerbox-img" alt="Computer 4">
+                        <div class="pcbox-text">
+                            <span class="workerbox-title"><strong>Dolgozó</strong></span>
+                            <p>Gépszerelő</p>
+                            <a href="#" class="workerbox-contact"><strong>Elérhetőségek</strong></a>
+                        </div>
+                    </article>
+                    <article class="workerbox-middle m-3 col-xl-6 col-md-6 col-sm-12">
+                        <img src="images/worker.jpg" class="workerbox-img" alt="Computer 4">
+                        <div class="pcbox-text">
+                            <span class="workerbox-title"><strong>Dolgozó</strong></span>
+                            <p>Manager</p>
+                            <a href="#" class="workerbox-contact"><strong>Elérhetőségek</strong></a>
+                        </div>
+                    </article>
+                    <article class="workerbox-right m-3 col-xl-6 col-md-6 col-sm-12">
+                        <img src="images/worker.jpg" class="workerbox-img" alt="Computer 4">
+                        <div class="pcbox-text">
+                            <span class="workerbox-title"><strong>Dolgozó</strong></span>
+                            <p>Gépszerelő</p>
+                            <a href="#" class="workerbox-contact"><strong>Elérhetőségek</strong></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <section class="reach-out">
+            <img src="images/cover_image2.png" alt="" class="cover">
+            <div class="form-cont">
+                <form class="row g-3 needs-validation" novalidate>
+                    <p>Kérdése van? Üzenjen nekünk! Két munkanapon belül felvesszük Önnel a kapcsolatot.</p>
+                    <div class="col-sm-6">
+                        <label for="inputName4" class="form-label">Név</label>
+                        <input type="text" class="form-control" id="inputName4" required>
+                        <div class="invalid-feedback">
+                            Ezen mező kitöltése kötelező.
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="phonNum" class="form-label">Telefonszám</label>
+                        <input type="tel" class="form-control" id="phonNum" required>
+                        <div class="invalid-feedback">
+                            Ezen mező kitöltése kötelező.
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" required>
+                        <div class="invalid-feedback">
+                            Kérjük, valós címet adjon meg!
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="county-select" class="form-label">Vármegye</label>
+                        <select class="form-select form-control" aria-label="County" id="county-select" required>
+                            <option selected disabled value="">Válasszon vármegyét</option>
+                            <option value="1">Győr-Moson-Sopron</option>
+                            <option value="2">Vas</option>
+                            <option value="3">Zala</option>
+                            <option value="4">Somogy</option>
+                            <option value="5">Baranya</option>
+                            <option value="6">Veszprém</option>
+                            <option value="7">Komárom-Esztergom</option>
+                            <option value="8">Fejér</option>
+                            <option value="9">Tolna</option>
+                            <option value="10">Pest</option>
+                            <option value="11">Bács-Kiskun</option>
+                            <option value="12">Nógrád</option>
+                            <option value="13">Heves</option>
+                            <option value="14">Jász-Nagykun-Szolnok</option>
+                            <option value="15">Csongrád-Csanád</option>
+                            <option value="16">Borsod-Abaúj-Zemplén</option>
+                            <option value="17">Szabolcs-Szatmár-Bereg</option>
+                            <option value="18">Hajdú-Bihar</option>
+                            <option value="19">Békés</option>
+                            <option value="20">Külföld</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Kérjük, válassza ki megyét, ahol tartózkodik.
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="messageInput" class="form-label">Üzenet</label>
+                        <textarea name="message" id="messageInput" class="d-block w-100" rows="4" cols="30"
+                            required></textarea>
+                        <div class="invalid-feedback">
+                            Ezen mező kitöltése kötelező!
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                            <label class="form-check-label" for="gridCheck">
+                                Elolvastam és megértettem a <a href="#">Szerződési feltételekben</a> foglaltakat
+                            </label>
+                            <div class="invalid-feedback">
+                                Kérjük, fogadja el a feltételeinket!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-dark ms-auto d-block">Küldés</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="" class="logo">
+                        </div>
+                        <div class="d-flex mt-4 mb-5 socials">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h6>Kontakt</h6>
+                        <ul>
+                            <li><a href="#">Telefonszám</a></li>
+                            <li><a href="#">E-mail</a></li>
+                            <li><a href="#">Manager</a></li>
+                            <li><a href="#">Székhely</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h6>Információk</h6>
+                        <ul>
+                            <li><a href="#">Szerződési feltételek</a></li>
+                            <li><a href="#">Nyitvatartás</a></li>
+                            <li><a href="#">Kiszállítás</a></li>
+                            <li><a href="#">GYIK</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h6>Hírlevél</h6>
+                        <div class="footer-newsletter">
+                            <p>Legyen Ön az első, aki értesül az újdonságokról, akciókról és promóciókról!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Add meg az E-mailed" id="newsletter" value="">
+                            </form>
+                            <button type="button" class="blue-button mt-3">Feliratkozás</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paying-methods d-flex justify-content-around">
+                <img src="images/visa.png" alt="Visa" title="Visa" class="icon">
+                <img src="images/paypal.png" alt="PayPal" title="PayPal" class="icon">
+                <img src="images/mastercard.png" alt="MasterCard" title="MasterCard" class="icon">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-copyright-text">
+                        <p>2024 &copy; <a href="#"><span>www.boolean.com</span></a>, minden jog fenntartva!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+    <button type="button" class="btn btn-secondary toggle-menu" data-bs-toggle="offcanvas"
+        data-bs-target="#offCanvasFilters" role="button" aria-controls="offCanvasFilters"><i
+            class="bi bi-caret-left-fill"></i></button>
+    <!-- Filters offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offCanvasFilters" aria-labelledby="offCanvasFiltersLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offCanvasFiltersLabel">Kosár</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h2>Szűrők</h2>
+            <p class="flex gap-1">
+                Videókártya típusa
+                <a data-bs-toggle="collapse" href="#collapseVideokartya" role="button" aria-expanded="false"
+                    aria-controls="collapseVideokartya">
+                    <i class="bi bi-plus-lg"></i>
+                </a>
+            </p>
+            <div class="collapse" id="collapseVideokartya">
+                <div class="card card-body mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="NVIDIA" id="flexCheckNVIDIA1">
+                        <label class="form-check-label" for="flexCheckNVIDIA">
+                            NVIDIA
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="AMD" id="flexCheckAMDVid1">
+                        <label class="form-check-label" for="flexCheckAMDVid">
+                            AMD
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <p class="gap-1">
+                Processzor típusa
+                <a data-bs-toggle="collapse" href="#collapseProcesszor" role="button" aria-expanded="false"
+                    aria-controls="collapseProcesszor">
+                    <i class="bi bi-plus-lg"></i>
+                </a>
+            </p>
+            <div class="collapse" id="collapseProcesszor">
+                <div class="card card-body mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Intel" id="flexCheckIntel1">
+                        <label class="form-check-label" for="flexCheckIntel">
+                            Intel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="AMD" id="flexCheckAMDProc1">
+                        <label class="form-check-label" for="flexCheckAMDProc">
+                            AMD
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <p class="gap-1">
+                Alaplap típusa
+                <a data-bs-toggle="collapse" href="#collapseAlaplap" role="button" aria-expanded="false"
+                    aria-controls="collapseAlaplap">
+                    <i class="bi bi-plus-lg"></i>
+                </a>
+            </p>
+            <div class="collapse" id="collapseAlaplap">
+                <div class="card card-body mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckAsusB7601">
+                        <label class="form-check-label" for="flexCheckAsusB760">
+                            Asus B760
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckASRockB4501">
+                        <label class="form-check-label" for="flexCheckASRockB450">
+                            ASRock B450
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckGIGABYTEH610M1">
+                        <label class="form-check-label" for="flexCheckGIGABYTEH610M">
+                            GIGABYTE H610M
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p class="gap-1">
+                Ár szerinti rendezés
+                <a data-bs-toggle="collapse" href="#collapseAr" role="button" aria-expanded="false"
+                    aria-controls="collapseAr">
+                    <i class="bi bi-plus-lg"></i>
+                </a>
+            </p>
+            <div class="collapse" id="collapseAr">
+                <div class="card card-body mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioAr" id="radioArNovekvo1">
+                        <label class="form-check-label" for="radioArNovekvo">
+                            Ár szerint növekvő
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioAr" id="radioArCsokkeno1">
+                        <label class="form-check-label" for="radioArCsokkeno">
+                            Ár szerint csökkenő
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p class="gap-1">
+                Jelzések alapján
+                <a data-bs-toggle="collapse" href="#collapseJelzesek" role="button" aria-expanded="false"
+                    aria-controls="collapseJelzesek">
+                    <i class="bi bi-plus-lg"></i>
+                </a>
+            </p>
+            <div class="collapse" id="collapseJelzesek">
+                <div class="card card-body mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioJelzes" id="radioJelzesJo1">
+                        <label class="form-check-label" for="radioJelzesJo">
+                            Jó elől
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioJelzes" id="radioJelzesRossz1">
+                        <label class="form-check-label" for="radioJelzesRossz">
+                            Rossz elől
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="range-container">
+                <a class="mb-3 text-center">Árhatárok megadása</a>
+                <div class="sliders_control">
+                    <input id="fromSlider1" type="range" value="0" min="0" max="1000000">
+                    <input id="toSlider1" type="range" value="725000" min="0" max="1000000">
+                </div>
+                <div class="form_control">
+                    <div class="form_control_container">
+                        <div class="form_control_container__time">Kezdőár</div>
+                        <input class="form_control_container__time__input" type="number" id="fromInput1" value="0"
+                            min="0" max="725000" readonly>
+                    </div>
+                    <div class="form_control_container">
+                        <div class="form_control_container__time">Végár</div>
+                        <input class="form_control_container__time__input" type="number" id="toInput1" value="1000000"
+                            min="0" max="1000000" readonly>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="applyFilters()">Szűrők alkalmazása</button>
+
+        </div>
+        
+    </div>
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-rlaction">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="loginLabel">Bejelentkezés</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Felhasználónév</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Bejelentkezés</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-rlaction">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="registerLabel">Regisztráció</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body errorcontainer">
+                    <form>
+                        <div class="row">
+                            <div class="mb-3 col-lg-6">
+                                <label for="InputSurname" class="form-label">Vezetéknév</label>
+                                <input type="text" class="form-control" id="InputSurname">
+                                <div class="error">✖ A vezetéknév mező nem lehet üres és nem tartalmazhat számot!
+                                </div>
+                            </div>
+                            <div class="mb-3 col-lg-6">
+                                <label for="InputFirstName" class="form-label">Keresztnév</label>
+                                <input type="text" class="form-control" id="InputFirstName">
+                                <div class="error">✖ A keresztnév mező nem lehet üres és nem tartalmazhat számot!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-lg-6">
+                                <label for="InputUsername" class="form-label">Felhasználónév</label>
+                                <input type="text" class="form-control" id="InputUsername">
+                                <div class="error">✖ A felhasználónévnek minimum 5, maximum 12 karakteresnek kell
+                                    lennie!</div>
+                            </div>
+                            <div class="mb-3 col-lg-6">
+                                <label for="InputEmail" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="InputEmail"
+                                    placeholder="boolean@gmail.com">
+                                <div class="error">✖ Kérjük, adja meg az email-címet a következő formátumban:
+                                    boolean@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-lg-6">
+                                <label for="InputDateOfBirth" class="form-label">Születési dátum</label>
+                                <input type="date" class="form-control" id="InputDateOfBirth">
+                                <div class="error">✖ A születési dátum 1924.01.01 és 2008.01.01 között kell legyen!
+                                </div>
+                            </div>
+                            <div class="mb-3 col-lg-6">
+                                <label for="InputMobile" class="form-label">Telefonszám</label>
+                                <input type="tel" class="form-control" id="InputMobile" placeholder="+36201234567">
+                                <div class="error">✖ Kérjük, adja meg a telefonszámot a következő formátumban:
+                                    +36201234567</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="psw" class="form-label">Jelszó</label>
+                            <input type="password" class="form-control" id="psw" name="psw"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Tartalmaznia kell legalább egy számot és egy kis- és nagybetűt, valamint legalább 8 vagy több karaktert"
+                                required>
+                            <div class="error">✖ Töltse ki a jelszó mezőt!</div>
+                            <div id="message">
+                                <span><strong>A jelszó tartalmazza a következőket:</strong></span>
+                                <p id="letter" class="invalid">Egy <b>kisbetű</b></p>
+                                <p id="capital" class="invalid">Egy <b>nagybetű</b></p>
+                                <p id="number" class="invalid">Egy <b>szám</b></p>
+                                <p id="length" class="invalid">Minimum <b>8 karakter</b></p>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="psw2" class="form-label">Jelszó újra</label>
+                            <input type="password" class="form-control" id="psw2">
+                            <div class="error">✖ A két jelszó nem egyezik meg!</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button"
+                                onclick="checkForm()">Regisztráció</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                onclick="clearErrors()">Mégse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/webshop.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/action.js"></script>
+</body>
+
+</html>

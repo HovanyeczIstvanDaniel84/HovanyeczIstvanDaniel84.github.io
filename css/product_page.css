@@ -1,0 +1,412 @@
+main {
+    width: 75%;
+    padding: 50px;
+}
+
+aside#config {
+    width: 25%;
+    margin-top: 56px;
+    border-left: 1px solid #ccc;
+    padding-top: 20px;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    background-color: #cccccc2f;
+}
+#config h3 {
+    font-size: 20px;
+}
+
+#config h2 {
+    font-size: 25px;
+}
+
+footer {
+    position: relative;
+    z-index: 9999;
+}
+
+aside#config .container {
+    overflow-y: scroll;
+    height: 85%;
+    
+}
+
+#config button {
+    font-weight: 500 !important;
+    display: flex !important; 
+    align-items: center !important;
+}
+
+#config p {
+    margin: 0px;
+}
+
+#config .container article:first-child {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#config article {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    background-color: #fff;
+}
+
+aside#config article {
+    padding: 10px;
+    padding-top: 20px;
+    border: 1px solid #ccc;
+}
+
+#config .brand img {
+    width: 75px !important;
+}
+
+#config p.value {
+    font-size: 18px;
+    font-weight: 500; 
+}
+
+#config p.label {
+    font-size: 16px;
+
+}
+#config .price {
+    font-size: 20px !important;
+}
+
+#config h4 {
+    font-size: 18px;
+    margin: 0px;
+}
+
+#config .img-cont {
+    width: 80px;
+    object-position: center;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #cccccc56;
+}
+
+#config .img-cont img {
+    width: 100%;
+}
+
+#config a {
+    white-space: wrap;
+}
+
+.showcase {
+    width: 500px;
+}
+
+.showcase .img-cont {
+    width: 500px;
+}
+
+.showcase .img-cont, .images a {
+    background-color: #cccccc11;
+}
+
+.showcase .img-cont img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.bi-three-dots-vertical {
+    display: none;
+    font-size: 20px;
+}
+
+.reviews article img {
+    width: 60px !important;
+}
+
+.reviews .article-head p {
+    margin: 0px;
+}
+
+.images a {
+    border: 1px solid #ccc;
+    width: 60px;
+    height: 60px;
+    margin-right:20px;
+}
+
+.rating i {
+    margin: 0px 5px;
+}
+
+main .nav-link {
+    border: none !important;
+    color: #2b2b2b;
+    font-weight: 500;
+}
+
+.rating-input i {
+    color: #2b2b2b !important;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+h4 {
+    margin-bottom: 30px;
+}
+
+.gallery a {
+    margin-right: 20px;
+}
+
+.gallery img {
+    width: 100%;
+}
+.top-section select {
+    width: 150px;
+}
+
+.filters {
+    padding: 30px;
+    background-color: #cccccc46;
+    box-shadow: 6px 6px 6px #2b2b2b38;
+}
+
+.filters span {
+    padding: 5px;
+    background-color: #2b2b2b !important;
+}
+
+main .nav-link.active {
+    color: #2b2b2b !important;
+    border-bottom: 3px solid #00ffd5 !important;
+    font-weight: 600;
+}
+#comment input, #comment textarea {
+    outline-color: #00ffd581 !important;
+}
+.reviews article {
+    border-bottom: 1px solid #ccc;
+}
+
+.reviews .footer {
+    padding: 20px;
+}
+
+.bi-star-fill, .bi-star-half, .bi-star {
+    color: #ffc107;
+}
+
+.tab-pane .ratings {
+    width: 30%;
+} 
+.tab-pane .reviews {
+    width: 70%;
+}
+
+.ratings .cont p {
+    margin: 0px;
+    display: flex;
+}
+
+.cont span {
+    color: #2b2b2b;
+    display: block;
+    width: 20px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.rating span {
+    color: #2b2b2b;
+    font-weight: 500;
+}
+
+#price {
+    font-size: 30px;
+}
+
+#price span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #f00;;
+}
+
+.desc p {
+    font-size: 14px;
+}
+
+.toggle-menu {
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.offer {
+    border-radius: 0px !important;
+    background-color: #cccccc31;
+    padding: 30px;
+    box-shadow: 6px 6px 6px #2b2b2b79;
+}
+
+.desc h4, .tab-pane h4 {
+    font-size: 22px;
+}
+
+table tr, table {
+    width: 100%;
+}
+
+.tab-pane table {
+    padding: 30px;
+    width: 50%;
+}
+
+.tab-pane {
+    padding-top: 50px;
+}
+
+table tr:nth-child(2n) {
+    background-color: #cccccc28;
+}
+
+.tab-pane table th, .tab-pane table td {
+    font-size: 14px;
+}
+
+table.halved tr{
+    height: 52px;
+}
+
+.ratings .cont {
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.ratings .cont i {
+   margin-right: 10px;
+}
+
+.ratings .rate-container {
+    width: 300px;
+    height: 8px;
+    background-color: #ccc;
+    margin-right: 10px
+}
+
+.ratings .rate-container, .ratings div {
+    border-radius: 0.5em;
+}
+
+.ratings .rate-container div {
+    height: 100%;
+    width: 50%;
+    background-color: #00ffd5;
+}
+
+table.halved {
+    height: 104px;
+}
+
+.tab-pane table tr {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-pane table th, .tab-pane table td {
+    padding: 15px;
+}
+
+.interact table th, .interact table td {
+    padding: 20px;
+}
+
+s {
+    color: #7e7e7e;
+}
+
+.filters span {
+    margin: 5px 0px;
+} 
+
+a.active {
+    border-width: 2px !important;
+    border-color: #9b9b9b !important;
+
+}
+
+@media only screen and (max-width: 1600px) {
+    aside#config {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    .toggle-menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .reviews-cont {
+        flex-wrap: wrap;
+    }
+    .tab-pane .reviews, .tab-pane .ratings {
+        width: 100%;
+    }
+    section.head {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .showcase, .interact, .showcase .img-cont {
+        width: 100%;
+    }
+    .showcase {
+        margin-right: 0px !important;
+    }
+    #disabled-tab {
+        display: none !important;
+    }
+    #tables div.d-flex {
+        flex-wrap: wrap;
+    }
+    #tables table {
+        width: 100%;
+        margin: 0px !important;
+    }
+    #tables table:first-child tr:last-child{
+        border-bottom: 0px !important;
+    }
+    #tables td {
+        text-align: right;
+    }
+}
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 20px !important;
+    }
+    main .nav-link {
+        font-size: 14px;
+        padding: 7px;
+    }
+    .tab-pane h4 {
+        font-size: 18px;
+    }
+    select {
+        display: none !important;
+    }
+    .bi-three-dots-vertical {
+        display: block;
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    .gallery a {
+        width: 35px;
+        height: 35px;
+    }
+    .gallery a:last-child {
+        margin-right: 0px;
+    }
+    
+}

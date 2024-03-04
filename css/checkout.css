@@ -1,0 +1,228 @@
+.img-cont {
+    width: 200px;
+}
+
+body {
+    background-color: #cccccc2d;
+}
+
+.img-cont img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+h1 span {
+    font-size: 25px;
+    font-weight: 400;
+}
+.sum:not(.sum.final) {
+    background-color: #cccccc85;
+    border-top: 2px solid #aaa;
+}
+
+.final {
+    font-weight: 600 !important;
+    font-size: 20px;
+}
+
+.price {
+    width: 180px;
+}
+
+main {
+    width: 80%;
+    padding: 30px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+aside {
+    width: 20%;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.empty-note {
+    padding: 30px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.empty-note h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+section.content {
+    min-height: 500px;
+}
+
+aside h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+article span, aside span, h1 span {
+    color: #2b2b2b !important;
+}
+
+.options i {
+    margin-right: 5px !important;
+}
+
+article .badge, button, a {
+    display: flex;
+    align-items: center;
+}
+
+article .badge {
+    padding: 5px !important;
+    background-color: #ffe6045e !important;
+    border-radius: 0px;
+    font-weight: 500 !important;
+}
+
+article .badge i {
+    font-size: 18px;
+}
+
+article button, article .desc a {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 0px !important;
+}
+
+button i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+aside i {
+    font-size: 14px !important;
+}
+
+aside .btn-dark {
+    width: 100%;
+    border-radius: 0px !important;
+}
+
+aside ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+article .main {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.price p {
+    color: #c70000;
+    font-size: 25px;
+}
+
+.article-section {
+    padding: 10px;
+}
+
+article {
+    background-color: #fff;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+h3 {
+    font-size: 16px
+}
+
+.hold h3, .hold p {
+    margin: 0px;
+}
+
+.fee {
+    font-weight: 500;
+}
+
+.price s {
+    font-size: 20px;
+}
+
+.hold {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hold i {
+    font-size: 20px;
+}
+
+.modal span {
+    color: #2b2b2b;
+}
+
+article .desc p {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+article .article-section:not(.article-section.build-fee) {
+    border-bottom: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 1500px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    main {
+        flex-direction: column;
+    }
+    aside, .main-section {
+        width: 100%;
+    }
+    aside {
+        margin: 0px;
+    }
+    .price p {
+        font-size: 20px;
+    }
+    .price s {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .img-cont {
+        display: none;
+    }
+    .empty-note h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    article .text-cont {
+        flex-direction: column !important;
+    }
+    div.price {
+        flex-direction: row !important;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .price p{
+        margin-bottom: 0px;
+    }
+}
